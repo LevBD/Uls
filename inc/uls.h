@@ -16,10 +16,6 @@
 #include <stdio.h>
 #include <fcntl.h>
 
-//typedef struct stat {
-//    mode_t     st_mode;
-//} m_stat;
-
-void dirwalk(char *dir);
+void mx_dirwalk(char *dir);
 
 #endif

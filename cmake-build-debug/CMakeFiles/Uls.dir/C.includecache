@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../inc/uls.h
+string.h
+-
+unistd.h
+-
+pwd.h
+-
+grp.h
+-
+time.h
+-
+dirent.h
+-
+errno.h
+-
+sys/types.h
+-
+sys/stat.h
+-
+sys/ioctl.h
+-
+sys/xattr.h
+-
+sys/acl.h
+-
+stdio.h
+-
+fcntl.h
+-
+
+/Users/blevishche/study/Uls/Uls/src/main.c
+uls.h
+/Users/blevishche/study/Uls/Uls/src/uls.h
+
+/Users/blevishche/study/Uls/Uls/src/mx_dirwalk.c
+uls.h
+/Users/blevishche/study/Uls/Uls/src/uls.h
+
