@@ -2,6 +2,7 @@
 #define ULS_H
 
 #include <string.h>
+#include <stdlib.h>
 #include <unistd.h>
 #include <pwd.h>
 #include <grp.h>
@@ -16,6 +17,22 @@
 #include <stdio.h>
 #include <fcntl.h>
 
-void mx_dirwalk(char *dir);
+#include "libmx/inc/libmx.h"
+
+typedef struct s_file {
+    struct stat stat;
+    char  *perm;
+} t_file;
+
+typedef struct s_main {
+    t_file *pointer;
+    int file_count;
+} t_main;
+
+void mx_dirwalk(t_main *m_ls, char *dir);
+void mx_get_permissions(t_main *m_ls, int i);
+
+
+
 
 #endif

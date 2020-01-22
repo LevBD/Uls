@@ -3,11 +3,13 @@ NAME = uls
 INC = uls.h
 
 SRC = main.c \
-    mx_dirwalk.c
-
+    mx_dirwalk.c \
+    mx_get_permissions.c
 
 OBJ = main.o \
-    mx_dirwalk.o
+    mx_dirwalk.o \
+    mx_get_permissions.o
+
 
 CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic
 

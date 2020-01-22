@@ -1,18 +1,18 @@
 #include "uls.h"
 
-void mx_dirwalk(char *dir) {
+void mx_dirwalk(t_main *m_ls, char *dir) {
     struct dirent *dp;
     DIR *dfd;
-    struct stat buf;
+
 
     if ((dfd = opendir(dir)) == NULL) {
         fprintf(stderr, "dirwalk: не могу открыть %sn", dir);
         return;
     }
-    while ((dp = readdir(dfd)) != NULL) {
-        lstat(dp->d_name, &buf);
-        printf("%s/%d\n", dp->d_name, buf.st_nlink);
+    for (int i = 0;(dp = readdir(dfd)) != NULL; i++) {
+        stat(dp->d_name, &m_ls->pointer[i].stat);
+        mx_get_permissions(m_ls, i);
+        printf("%s  %s\n", m_ls->pointer[i].perm, dp->d_name);
     }
-
     closedir(dfd);
 }
