@@ -4,6 +4,7 @@ project(Uls)
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
+include_directories(cmake-build-debug)
 include_directories(inc)
 include_directories(libmx)
 include_directories(libmx/inc)
@@ -11,6 +12,10 @@ include_directories(libmx/src)
 include_directories(src)
 
 add_executable(Uls
+        cmake-build-debug/cmake_install.cmake
+        cmake-build-debug/CMakeCache.txt
+        cmake-build-debug/Makefile
+        cmake-build-debug/Uls.cbp
         inc/uls.h
         libmx/inc/libmx.h
         libmx/src/mx_binary_search.c
@@ -69,8 +74,12 @@ add_executable(Uls
         libmx/src/mx_strstr.c
         libmx/src/mx_strtrim.c
         libmx/src/mx_swap_char.c
+        libmx/libmx.a
         libmx/Makefile
         src/main.c
         src/mx_dirwalk.c
         src/mx_get_permissions.c
-        Makefile)
+        src/mx_init_m_struct.c
+        CMakeLists.txt
+        Makefile
+        uls)

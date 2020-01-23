@@ -63,12 +63,14 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/blevishche/study/Uls/Uls/src/main.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/main.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_dirwalk.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_dirwalk.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_get_permissions.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_get_permissions.c.o"
+  "/Users/blevishche/study/Uls/Uls/src/mx_init_m_struct.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../."
+  "."
   "../inc"
   "../libmx"
   "../libmx/inc"

@@ -1,18 +1,4 @@
-/private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/663F0130-1651-4886-A99D-8784ACC5388B/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/blevishche/study/Uls/Uls
--- The C compiler identification is AppleClang 10.0.1.10010046
--- The CXX compiler identification is AppleClang 10.0.1.10010046
--- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc
--- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++
--- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
+/private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/8F5AC6F8-5D9C-428F-92D0-66DBCAA252A2/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/blevishche/study/Uls/Uls
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/blevishche/study/Uls/Uls/cmake-build-debug

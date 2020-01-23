@@ -226,10 +226,6 @@ libmx.h
 libmx.h
 /Users/blevishche/study/Uls/Uls/libmx/src/libmx.h
 
-/Users/blevishche/study/Uls/Uls/libmx/src/mx_strcpy.c
-string.h
--
-
 /Users/blevishche/study/Uls/Uls/libmx/src/mx_strdel.c
 libmx.h
 /Users/blevishche/study/Uls/Uls/libmx/src/libmx.h
@@ -289,6 +285,10 @@ uls.h
 /Users/blevishche/study/Uls/Uls/src/uls.h
 
 /Users/blevishche/study/Uls/Uls/src/mx_get_permissions.c
+uls.h
+/Users/blevishche/study/Uls/Uls/src/uls.h
+
+/Users/blevishche/study/Uls/Uls/src/mx_init_m_struct.c
 uls.h
 /Users/blevishche/study/Uls/Uls/src/uls.h
 

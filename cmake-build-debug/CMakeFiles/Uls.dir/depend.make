@@ -180,3 +180,7 @@ CMakeFiles/Uls.dir/src/mx_get_permissions.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_get_permissions.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_get_permissions.c.o: ../src/mx_get_permissions.c
 
+CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o: ../src/mx_init_m_struct.c
+

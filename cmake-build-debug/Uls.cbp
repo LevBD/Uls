@@ -45,6 +45,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/blevishche/study/Uls/Uls/."/>
+					<Add directory="/Users/blevishche/study/Uls/Uls/cmake-build-debug"/>
 					<Add directory="/Users/blevishche/study/Uls/Uls/inc"/>
 					<Add directory="/Users/blevishche/study/Uls/Uls/libmx"/>
 					<Add directory="/Users/blevishche/study/Uls/Uls/libmx/inc"/>
@@ -72,6 +73,7 @@
 				<Option compiler="gcc"/>
 				<Compiler>
 					<Add directory="/Users/blevishche/study/Uls/Uls/."/>
+					<Add directory="/Users/blevishche/study/Uls/Uls/cmake-build-debug"/>
 					<Add directory="/Users/blevishche/study/Uls/Uls/inc"/>
 					<Add directory="/Users/blevishche/study/Uls/Uls/libmx"/>
 					<Add directory="/Users/blevishche/study/Uls/Uls/libmx/inc"/>
@@ -92,7 +94,22 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/CMakeLists.txt">
+			<Option target="Uls"/>
+		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/Makefile">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeCache.txt">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/cmake-build-debug/Makefile">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/cmake-build-debug/Uls.cbp">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/cmake-build-debug/cmake_install.cmake">
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/inc/uls.h">
@@ -102,6 +119,9 @@
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/inc/libmx.h">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/libmx.a">
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/src/mx_binary_search.c">
@@ -279,6 +299,12 @@
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_get_permissions.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_init_m_struct.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/uls">
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/CMakeLists.txt">

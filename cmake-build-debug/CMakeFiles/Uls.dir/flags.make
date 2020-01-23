@@ -6,5 +6,5 @@ C_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.14.sdk
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/blevishche/study/Uls/Uls/. -I/Users/blevishche/study/Uls/Uls/inc -I/Users/blevishche/study/Uls/Uls/libmx -I/Users/blevishche/study/Uls/Uls/libmx/inc -I/Users/blevishche/study/Uls/Uls/libmx/src -I/Users/blevishche/study/Uls/Uls/src 
+C_INCLUDES = -I/Users/blevishche/study/Uls/Uls/. -I/Users/blevishche/study/Uls/Uls/cmake-build-debug -I/Users/blevishche/study/Uls/Uls/inc -I/Users/blevishche/study/Uls/Uls/libmx -I/Users/blevishche/study/Uls/Uls/libmx/inc -I/Users/blevishche/study/Uls/Uls/libmx/src -I/Users/blevishche/study/Uls/Uls/src 
 

@@ -22,16 +22,20 @@
 typedef struct s_file {
     struct stat stat;
     char  *perm;
+    char *file_name;
+    char *linkname;
 } t_file;
 
 typedef struct s_main {
     t_file *pointer;
     int file_count;
+    char *path;
+
 } t_main;
 
 void mx_dirwalk(t_main *m_ls, char *dir);
 void mx_get_permissions(t_main *m_ls, int i);
-
+void mx_init_m_struct(char *dir, t_main *m_ls);
 
 
 
