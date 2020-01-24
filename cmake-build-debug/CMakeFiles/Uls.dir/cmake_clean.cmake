@@ -59,6 +59,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Uls.dir/src/mx_dirwalk.c.o"
   "CMakeFiles/Uls.dir/src/mx_get_permissions.c.o"
   "CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o"
+  "CMakeFiles/Uls.dir/src/mx_print_long.c.o"
   "Uls"
   "Uls.pdb"
 )

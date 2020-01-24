@@ -11,8 +11,9 @@ void mx_init_m_struct(char *dir, t_main *m_ls) {
     }
     while ((dp = readdir(dfd)) != NULL)
         size++;
-    closedir(dfd);
-    t_file *file_arr = (t_file*)malloc(sizeof(t_file) * size);
-    m_ls->pointer = file_arr;
-    m_ls->file_count = size;
+        closedir(dfd);
+        m_ls->file_count=size;
+   // t_file *file_arr = (t_file*)malloc(sizeof(t_file) * size);
+//    m_ls->pointer = file_arr;
+  //  m_ls->file_count = size;
 }

@@ -184,3 +184,7 @@ CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o: ../src/mx_init_m_struct.c
 
+CMakeFiles/Uls.dir/src/mx_print_long.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_print_long.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_print_long.c.o: ../src/mx_print_long.c
+
