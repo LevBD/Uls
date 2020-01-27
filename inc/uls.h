@@ -37,7 +37,7 @@ void mx_dirwalk(t_main *m_ls, char *dir);
 void mx_get_permissions(t_main *m_ls, int i);
 void mx_init_m_struct(char *dir, t_main *m_ls);
 void mx_print_long(t_main *m_ls);
-
+void mx_sort_struct(t_main *m_ls);
 
 
 #endif
