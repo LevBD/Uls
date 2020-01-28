@@ -7,14 +7,16 @@ SRC = main.c \
     mx_get_permissions.c \
     mx_init_m_struct.c \
     mx_print_long.c \
-    mx_sort_struct.c
+    mx_sort_struct.c \
+    mx_get_ugid.c
 
 OBJ = main.o \
     mx_dirwalk.o \
     mx_get_permissions.o \
     mx_init_m_struct.o \
     mx_print_long.o \
-    mx_sort_struct.o
+    mx_sort_struct.o \
+    mx_get_ugid.o
 
 
 CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic

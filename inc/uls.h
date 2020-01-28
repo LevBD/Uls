@@ -24,6 +24,8 @@ typedef struct s_file {
     char  *perm;
     char *file_name;
     char *linkname;
+    char *user_name;
+    char *group_name;
 } t_file;
 
 typedef struct s_main {
@@ -38,6 +40,7 @@ void mx_get_permissions(t_main *m_ls, int i);
 void mx_init_m_struct(char *dir, t_main *m_ls);
 void mx_print_long(t_main *m_ls);
 void mx_sort_struct(t_main *m_ls);
+void mx_get_ugid(t_main *m_ls, int i);
 
 
 #endif

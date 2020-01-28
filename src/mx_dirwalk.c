@@ -1,4 +1,5 @@
 #include "uls.h"
+
 static void make_path(t_main *m_ls, int i);
 static void get_attribute(t_main *m_ls, int i, char *file_name);
 static void init_s_file(t_main *m_s, char *path);
@@ -17,6 +18,7 @@ void mx_dirwalk(t_main *m_ls, char *file_name) {
     }
     for (int i = 0;(dp = readdir(dfd)) != NULL; i++) {
         get_attribute(m_ls, i, dp->d_name);
+
     }
     closedir(dfd);
     
@@ -36,33 +38,34 @@ static void init_s_file(t_main *m_ls, char *path) {
         size++;
     }
     closedir(dir);
-    //printf(“sise_dir\t %d\n”, size);
+//    printf(“sise_dir\t %d\n”, size);
     /* win size */
-  //  struct winsize ws;
- //   ioctl(STDIN_FILENO, TIOCGWINSZ, &ws);
+//    struct winsize ws;
+//    ioctl(STDIN_FILENO, TIOCGWINSZ, &ws);
 //    int win_size = ws.ws_col;
-  //  m_s->win_size = win_size;
+//    m_ls->win_size = win_size;
     m_ls->path = path;
     m_ls->file_count = size;
 
 
-  //  m_s->max_n_file_size = 0;
- //   m_s->max_uid_size = 0;
- //   m_s->max_gid_size = 0;                        //!!!!!!attention
-//    m_s->max_link_size = 0;
- //   m_s->max_byte_size = 0;
- //   m_s->rec_dir_c = 0;
+//    m_ls->max_n_file_size = 0;
+//    m_ls->max_uid_size = 0;
+//    m_ls->max_gid_size = 0;
+//    m_ls->max_link_size = 0;
+//    m_ls->max_byte_size = 0;
+//    m_ls->rec_dir_c = 0;
 }
 
 
 
 static void get_attribute(t_main *m_ls, int i, char *file_name) {
     struct stat statbuf;
-     m_ls->pointer[i].file_name = mx_strdup(file_name);
-     make_path(m_ls, i);
-     lstat(m_ls->pointer[i].linkname, &statbuf);
-     m_ls->pointer[i].stat = statbuf;
-     mx_get_permissions(m_ls, i);
+    m_ls->pointer[i].file_name = mx_strdup(file_name);
+    make_path(m_ls, i);
+    lstat(m_ls->pointer[i].linkname, &statbuf);
+    m_ls->pointer[i].stat = statbuf;
+    mx_get_ugid(m_ls, i);
+    mx_get_permissions(m_ls, i);
 }
 
 

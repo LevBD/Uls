@@ -5,6 +5,8 @@ int main(int argc, char *argv[]) {
     t_main *m_ls = (t_main *)malloc(sizeof(t_main));
     char *file_name = mx_abs_path(argv[1]);
 
+
+
     mx_dirwalk(m_ls, file_name);
     mx_sort_struct(m_ls);
     mx_print_long(m_ls);

@@ -63,8 +63,10 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/blevishche/study/Uls/Uls/src/main.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/main.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_dirwalk.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_dirwalk.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_get_permissions.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_get_permissions.c.o"
+  "/Users/blevishche/study/Uls/Uls/src/mx_get_ugid.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_get_ugid.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_init_m_struct.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_print_long.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_print_long.c.o"
+  "/Users/blevishche/study/Uls/Uls/src/mx_sort_struct.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_sort_struct.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
