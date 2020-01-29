@@ -15,7 +15,7 @@ void mx_print_long(t_main *m_ls) {
         mx_printstr(m_ls->pointer[i].group_name);
         print_spaces(m_ls->max_gid_size + 2 - mx_strlen(m_ls->pointer[i].group_name));
         mx_printint(m_ls->pointer[i].stat.st_size);
-        print_spaces(m_ls->max_byte_size + 1 - (mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_size))));
+        print_spaces(m_ls->max_byte_size - (mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_size))));
 //        if (S_ISCHR(m_ls->pointer[i].stat.st_mode) || S_ISBLK(m_ls->pointer[i].stat.st_mode)) {
 //            mx_printint(m_ls->pointer[i].stat.st_dev);
 //            mx_printstr(", ");
