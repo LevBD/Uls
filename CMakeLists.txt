@@ -15,6 +15,7 @@ add_executable(Uls
         cmake-build-debug/cmake_install.cmake
         cmake-build-debug/CMakeCache.txt
         cmake-build-debug/Makefile
+        cmake-build-debug/Uls
         cmake-build-debug/Uls.cbp
         inc/uls.h
         libmx/inc/libmx.h
@@ -77,6 +78,7 @@ add_executable(Uls
         libmx/libmx.a
         libmx/Makefile
         src/main.c
+        src/mx_abs_path.c
         src/mx_dirwalk.c
         src/mx_get_permissions.c
         src/mx_get_ugid.c

@@ -32,6 +32,11 @@ typedef struct s_main {
     t_file *pointer;
     int file_count;
     char *path;
+    int max_f_size;
+    int max_uid_size;
+    int max_gid_size;
+    int max_link_size;
+    int max_byte_size;
     char *file;
 } t_main;
 char *mx_abs_path(char *name);
@@ -41,6 +46,8 @@ void mx_init_m_struct(char *dir, t_main *m_ls);
 void mx_print_long(t_main *m_ls);
 void mx_sort_struct(t_main *m_ls);
 void mx_get_ugid(t_main *m_ls, int i);
-
+char *mx_abs_path(char *name);
+void mx_print_acl(char *file);
+void mx_print_specific_time(time_t t);
 
 #endif

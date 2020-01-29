@@ -61,6 +61,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/blevishche/study/Uls/Uls/libmx/src/mx_strtrim.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/libmx/src/mx_strtrim.c.o"
   "/Users/blevishche/study/Uls/Uls/libmx/src/mx_swap_char.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/libmx/src/mx_swap_char.c.o"
   "/Users/blevishche/study/Uls/Uls/src/main.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/main.c.o"
+  "/Users/blevishche/study/Uls/Uls/src/mx_abs_path.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_abs_path.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_dirwalk.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_dirwalk.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_get_permissions.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_get_permissions.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_get_ugid.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_get_ugid.c.o"

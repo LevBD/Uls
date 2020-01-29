@@ -64,8 +64,8 @@ static void get_attribute(t_main *m_ls, int i, char *file_name) {
     make_path(m_ls, i);
     lstat(m_ls->pointer[i].linkname, &statbuf);
     m_ls->pointer[i].stat = statbuf;
-    mx_get_ugid(m_ls, i);
     mx_get_permissions(m_ls, i);
+    mx_get_ugid(m_ls, i);
 }
 
 

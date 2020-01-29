@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/D5BF195F-B366-4B36-ACE4-319792D19641/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/7B979196-B7FD-42F7-93DB-77AC4050C4D7/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/D5BF195F-B366-4B36-ACE4-319792D19641/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/7B979196-B7FD-42F7-93DB-77AC4050C4D7/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/blevishche/study/Uls/Uls/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/D5BF195F-B366-4B36-ACE4-319792D19641/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/7B979196-B7FD-42F7-93DB-77AC4050C4D7/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/D5BF195F-B366-4B36-ACE4-319792D19641/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/7B979196-B7FD-42F7-93DB-77AC4050C4D7/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -1662,6 +1662,33 @@ src/main.c.s:
 	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/main.c.s
 .PHONY : src/main.c.s
 
+src/mx_abs_path.o: src/mx_abs_path.c.o
+
+.PHONY : src/mx_abs_path.o
+
+# target to build an object file
+src/mx_abs_path.c.o:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_abs_path.c.o
+.PHONY : src/mx_abs_path.c.o
+
+src/mx_abs_path.i: src/mx_abs_path.c.i
+
+.PHONY : src/mx_abs_path.i
+
+# target to preprocess a source file
+src/mx_abs_path.c.i:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_abs_path.c.i
+.PHONY : src/mx_abs_path.c.i
+
+src/mx_abs_path.s: src/mx_abs_path.c.s
+
+.PHONY : src/mx_abs_path.s
+
+# target to generate assembly for a file
+src/mx_abs_path.c.s:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_abs_path.c.s
+.PHONY : src/mx_abs_path.c.s
+
 src/mx_dirwalk.o: src/mx_dirwalk.c.o
 
 .PHONY : src/mx_dirwalk.o
@@ -2004,6 +2031,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/mx_abs_path.o"
+	@echo "... src/mx_abs_path.i"
+	@echo "... src/mx_abs_path.s"
 	@echo "... src/mx_dirwalk.o"
 	@echo "... src/mx_dirwalk.i"
 	@echo "... src/mx_dirwalk.s"

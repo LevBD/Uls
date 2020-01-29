@@ -56,6 +56,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Uls.dir/libmx/src/mx_strtrim.c.o"
   "CMakeFiles/Uls.dir/libmx/src/mx_swap_char.c.o"
   "CMakeFiles/Uls.dir/src/main.c.o"
+  "CMakeFiles/Uls.dir/src/mx_abs_path.c.o"
   "CMakeFiles/Uls.dir/src/mx_dirwalk.c.o"
   "CMakeFiles/Uls.dir/src/mx_get_permissions.c.o"
   "CMakeFiles/Uls.dir/src/mx_get_ugid.c.o"

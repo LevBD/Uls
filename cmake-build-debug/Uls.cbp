@@ -106,6 +106,9 @@
 		<Unit filename="/Users/blevishche/study/Uls/Uls/cmake-build-debug/Makefile">
 			<Option target="Uls"/>
 		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/cmake-build-debug/Uls">
+			<Option target="Uls"/>
+		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/cmake-build-debug/Uls.cbp">
 			<Option target="Uls"/>
 		</Unit>
@@ -293,6 +296,9 @@
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/main.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_abs_path.c">
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_dirwalk.c">

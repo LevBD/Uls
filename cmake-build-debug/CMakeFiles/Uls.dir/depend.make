@@ -172,6 +172,10 @@ CMakeFiles/Uls.dir/src/main.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/main.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/main.c.o: ../src/main.c
 
+CMakeFiles/Uls.dir/src/mx_abs_path.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_abs_path.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_abs_path.c.o: ../src/mx_abs_path.c
+
 CMakeFiles/Uls.dir/src/mx_dirwalk.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_dirwalk.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_dirwalk.c.o: ../src/mx_dirwalk.c
