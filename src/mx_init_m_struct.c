@@ -5,15 +5,16 @@ void mx_init_m_struct(char *dir, t_main *m_ls) {
     DIR *dfd;
     int size = 0;
 
-    if ((dfd = opendir(dir)) == NULL) {
-        fprintf(stderr, "dirwalk: не открыть %sn", dir);
-        return;
-    }
-    while ((dp = readdir(dfd)) != NULL)
+
+    dfd = opendir(dir);
+    if (dir == NULL)
+        exit(-1);
+    while ((dp = readdir(dfd)) != NULL) {
         size++;
-        closedir(dfd);
-        m_ls->file_count=size;
-   // t_file *file_arr = (t_file*)malloc(sizeof(t_file) * size);
-//    m_ls->pointer = file_arr;
-  //  m_ls->file_count = size;
+    }
+    closedir(dfd);
+    m_ls->file_count = size;
+    m_ls->path = dir;
+    t_file *file_arr = (t_file *)malloc(sizeof(t_file) * m_ls->file_count);
+    m_ls->pointer = file_arr;
 }

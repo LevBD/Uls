@@ -54,23 +54,7 @@ stdbool.h
 malloc/malloc.h
 -
 
-/Users/blevishche/study/Uls/Uls/src/main.c
-uls.h
-/Users/blevishche/study/Uls/Uls/src/uls.h
-
-/Users/blevishche/study/Uls/Uls/src/mx_abs_path.c
-uls.h
-/Users/blevishche/study/Uls/Uls/src/uls.h
-
 /Users/blevishche/study/Uls/Uls/src/mx_dirwalk.c
-uls.h
-/Users/blevishche/study/Uls/Uls/src/uls.h
-
-/Users/blevishche/study/Uls/Uls/src/mx_get_permissions.c
-uls.h
-/Users/blevishche/study/Uls/Uls/src/uls.h
-
-/Users/blevishche/study/Uls/Uls/src/mx_get_ugid.c
 uls.h
 /Users/blevishche/study/Uls/Uls/src/uls.h
 
@@ -78,11 +62,7 @@ uls.h
 uls.h
 /Users/blevishche/study/Uls/Uls/src/uls.h
 
-/Users/blevishche/study/Uls/Uls/src/mx_print_long.c
-uls.h
-/Users/blevishche/study/Uls/Uls/src/uls.h
-
-/Users/blevishche/study/Uls/Uls/src/mx_sort_struct.c
+/Users/blevishche/study/Uls/Uls/src/mx_print_total_blocks.c
 uls.h
 /Users/blevishche/study/Uls/Uls/src/uls.h
 

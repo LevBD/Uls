@@ -15,7 +15,6 @@ add_executable(Uls
         cmake-build-debug/cmake_install.cmake
         cmake-build-debug/CMakeCache.txt
         cmake-build-debug/Makefile
-        cmake-build-debug/Uls
         cmake-build-debug/Uls.cbp
         inc/uls.h
         libmx/inc/libmx.h
@@ -83,8 +82,8 @@ add_executable(Uls
         src/mx_get_permissions.c
         src/mx_get_ugid.c
         src/mx_init_m_struct.c
+        src/mx_print_acl.c
         src/mx_print_long.c
-        src/mx_sort_struct.c
-        CMakeLists.txt
-        Makefile
-        uls)
+        src/mx_print_specific_time.c
+        src/mx_print_total_blocks.c
+        src/mx_sort_struct.c)

@@ -11,7 +11,8 @@ SRC = main.c \
     mx_get_ugid.c \
     mx_abs_path.c \
     mx_print_acl.c \
-    mx_print_specific_time.c
+    mx_print_specific_time.c \
+    mx_print_total_blocks.c
 
 OBJ = main.o \
     mx_dirwalk.o \
@@ -22,7 +23,8 @@ OBJ = main.o \
     mx_get_ugid.o \
     mx_abs_path.o \
     mx_print_acl.o \
-    mx_print_specific_time.o
+    mx_print_specific_time.o \
+    mx_print_total_blocks.o
 
 
 CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic

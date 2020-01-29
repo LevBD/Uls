@@ -94,19 +94,10 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/blevishche/study/Uls/Uls/CMakeLists.txt">
-			<Option target="Uls"/>
-		</Unit>
-		<Unit filename="/Users/blevishche/study/Uls/Uls/Makefile">
-			<Option target="Uls"/>
-		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeCache.txt">
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/cmake-build-debug/Makefile">
-			<Option target="Uls"/>
-		</Unit>
-		<Unit filename="/Users/blevishche/study/Uls/Uls/cmake-build-debug/Uls">
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/cmake-build-debug/Uls.cbp">
@@ -313,13 +304,19 @@
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_init_m_struct.c">
 			<Option target="Uls"/>
 		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_print_acl.c">
+			<Option target="Uls"/>
+		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_print_long.c">
 			<Option target="Uls"/>
 		</Unit>
-		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_sort_struct.c">
+		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_print_specific_time.c">
 			<Option target="Uls"/>
 		</Unit>
-		<Unit filename="/Users/blevishche/study/Uls/Uls/uls">
+		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_print_total_blocks.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_sort_struct.c">
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/CMakeLists.txt">

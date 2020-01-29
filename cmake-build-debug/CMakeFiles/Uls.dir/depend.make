@@ -192,9 +192,21 @@ CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o: ../src/mx_init_m_struct.c
 
+CMakeFiles/Uls.dir/src/mx_print_acl.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_print_acl.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_print_acl.c.o: ../src/mx_print_acl.c
+
 CMakeFiles/Uls.dir/src/mx_print_long.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_print_long.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_print_long.c.o: ../src/mx_print_long.c
+
+CMakeFiles/Uls.dir/src/mx_print_specific_time.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_print_specific_time.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_print_specific_time.c.o: ../src/mx_print_specific_time.c
+
+CMakeFiles/Uls.dir/src/mx_print_total_blocks.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_print_total_blocks.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_print_total_blocks.c.o: ../src/mx_print_total_blocks.c
 
 CMakeFiles/Uls.dir/src/mx_sort_struct.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_sort_struct.c.o: ../libmx/inc/libmx.h
