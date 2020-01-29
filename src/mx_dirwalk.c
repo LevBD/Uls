@@ -2,6 +2,7 @@
 
 static void make_path(t_main *m_ls, int i);
 static void get_attribute(t_main *m_ls, int i, char *file_name);
+static void get_max(t_main *m_ls, int i);
 //static void init_s_file(t_main *m_s, char *path);
 
 void mx_dirwalk(t_main *m_ls, char *file_name) {
@@ -15,7 +16,7 @@ void mx_dirwalk(t_main *m_ls, char *file_name) {
     dfd = opendir(file_name);
     for (int i = 0;(dp = readdir(dfd)) != NULL; i++) {
         get_attribute(m_ls, i, dp->d_name);
-//        get_max
+        get_max(m_ls, i);
     }
     closedir(dfd);
 }
@@ -65,4 +66,17 @@ static void make_path(t_main *m_ls, int i) {
         mx_strcpy((p + len_path), m_ls->pointer[i].file_name);
     }
     m_ls->pointer[i].linkname = p;
+}
+
+static void get_max(t_main *m_ls, int i) {
+    if (mx_strlen(m_ls->pointer[i].file_name) > m_ls->max_f_size)
+        m_ls->max_f_size = mx_strlen(m_ls->pointer[i].file_name);
+    if (mx_strlen(m_ls->pointer[i].user_name) > m_ls->max_uid_size)
+        m_ls->max_uid_size = mx_strlen(m_ls->pointer[i].user_name);
+    if (mx_strlen(m_ls->pointer[i].group_name) > m_ls->max_gid_size)
+        m_ls->max_gid_size = mx_strlen(m_ls->pointer[i].group_name);
+    if (mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_nlink)) > m_ls->max_link_size)
+        m_ls->max_link_size = mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_nlink));
+    if (mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_size)) > m_ls->max_byte_size)
+        m_ls->max_byte_size = mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_size));
 }
