@@ -28,7 +28,7 @@ typedef struct s_file {
     char *group_name;
 } t_file;
 
-typedef struct s_main {
+typedef struct s_dir {
     t_file *pointer;
     int file_count;
     char *path;
@@ -39,18 +39,18 @@ typedef struct s_main {
     int max_link_size;
     int max_byte_size;
     char *file;
-} t_main;
+} t_dir;
 char *mx_abs_path(char *name);
-void mx_dirwalk(t_main *m_ls, char *dir);
-void mx_get_permissions(t_main *m_ls, int i);
-void mx_init_m_struct(char *dir, t_main *m_ls);
-void mx_print_long(t_main *m_ls);
-void mx_sort_struct(t_main *m_ls);
-void mx_get_ugid(t_main *m_ls, int i);
+void mx_dirwalk(t_dir *m_ls, char *dir);
+void mx_get_permissions(t_dir *m_ls, int i);
+void mx_init_m_struct(char *dir, t_dir *m_ls);
+void mx_print_long(t_dir *m_ls);
+void mx_sort_struct(t_dir *m_ls);
+void mx_get_ugid(t_dir *m_ls, int i);
 char *mx_abs_path(char *name);
 //void mx_print_acl(t_main *m_ls, int i);
 void mx_print_acl(char *file);
 void mx_print_specific_time(time_t t);
-void mx_print_total_blocks(t_main *m_ls);
+void mx_print_total_blocks(t_dir *m_ls);
 
 #endif

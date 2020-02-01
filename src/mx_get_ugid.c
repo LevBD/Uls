@@ -1,6 +1,6 @@
 #include "uls.h"
 
-void mx_get_ugid(t_main *m_ls, int i) {
+void mx_get_ugid(t_dir *m_ls, int i) {
     struct passwd *pwd;
     struct group *grp;
 

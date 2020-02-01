@@ -1,6 +1,6 @@
 #include "uls.h"
 
-void mx_sort_struct(t_main *m_ls) {
+void mx_sort_struct(t_dir *m_ls) {
     t_file temp;
     int size = m_ls->file_count;
 

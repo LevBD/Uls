@@ -1,9 +1,9 @@
 #include "uls.h"
 
 static void print_spaces(int number);
-static void mx_print_linkname(t_main *m_ls, int i);
+static void mx_print_linkname(t_dir *m_ls, int i);
 
-void mx_print_long(t_main *m_ls) {
+void mx_print_long(t_dir *m_ls) {
     mx_print_total_blocks(m_ls);
     for (int i = 0; i < m_ls->file_count; i++) {
         mx_printstr(m_ls->pointer[i].perm);
@@ -34,13 +34,13 @@ static void print_spaces(int number) {
     }
 }
 
-static void mx_print_linkname(t_main *m_ls, int i) {
+static void mx_print_linkname(t_dir *m_ls, int i) {
     char link[255];
     int size = 0;
     if (!m_ls->pointer[i].file_name)
         return;
-    size = readlink(m_ls->path, link, (size_t)malloc(sizeof(link) - 1));
+    size = readlink(m_ls->path, link, sizeof(link) - 1);
     link[size] = '\0';
-    mx_printstr(" -> ");
+    mx_printstr("->");
     mx_printstr(link);
 }

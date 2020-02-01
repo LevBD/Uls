@@ -1,11 +1,11 @@
 #include "uls.h"
 
-static void make_path(t_main *m_ls, int i);
-static void get_attribute(t_main *m_ls, int i, char *file_name);
-static void get_max(t_main *m_ls, int i);
+static void make_path(t_dir *m_ls, int i);
+static void get_attribute(t_dir *m_ls, int i, char *file_name);
+static void get_max(t_dir *m_ls, int i);
 //static void init_s_file(t_main *m_s, char *path);
 
-void mx_dirwalk(t_main *m_ls, char *file_name) {
+void mx_dirwalk(t_dir *m_ls, char *file_name) {
     struct dirent *dp;
     DIR *dfd;
 
@@ -39,7 +39,7 @@ void mx_dirwalk(t_main *m_ls, char *file_name) {
 //    m_ls->file_count = size;
 //}
 
-static void get_attribute(t_main *m_ls, int i, char *file_name) {
+static void get_attribute(t_dir *m_ls, int i, char *file_name) {
     struct stat statbuf;
     m_ls->pointer[i].file_name = mx_strdup(file_name);
     make_path(m_ls, i);
@@ -49,7 +49,7 @@ static void get_attribute(t_main *m_ls, int i, char *file_name) {
     mx_get_ugid(m_ls, i);
 }
 
-static void make_path(t_main *m_ls, int i) {
+static void make_path(t_dir *m_ls, int i) {
     size_t len_path = mx_strlen(m_ls->path);
     size_t len_name = mx_strlen(m_ls->pointer[i].file_name);
     char *p;
@@ -68,7 +68,7 @@ static void make_path(t_main *m_ls, int i) {
     m_ls->pointer[i].linkname = p;
 }
 
-static void get_max(t_main *m_ls, int i) {
+static void get_max(t_dir *m_ls, int i) {
     if (mx_strlen(m_ls->pointer[i].file_name) > m_ls->max_f_size)
         m_ls->max_f_size = mx_strlen(m_ls->pointer[i].file_name);
     if (mx_strlen(m_ls->pointer[i].user_name) > m_ls->max_uid_size)

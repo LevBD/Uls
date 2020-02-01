@@ -1,8 +1,8 @@
 #include "uls.h"
 
-static char *get_type(t_main *m_ls, int i, char *res);
+static char *get_type(t_dir *m_ls, int i, char *res);
 
-void mx_get_permissions(t_main *m_ls, int i) {
+void mx_get_permissions(t_dir *m_ls, int i) {
     char *res = mx_strnew(10);
 
     get_type(m_ls, i, res);
@@ -25,7 +25,7 @@ void mx_get_permissions(t_main *m_ls, int i) {
     free(res);
 }
 
-static char *get_type(t_main *m_ls, int i, char *res) {
+static char *get_type(t_dir *m_ls, int i, char *res) {
 
     res[0] = S_ISBLK(m_ls->pointer[i].stat.st_mode) ? 'b' :
     S_ISCHR(m_ls->pointer[i].stat.st_mode) ? 'c' :

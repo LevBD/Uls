@@ -2,7 +2,7 @@
 
 int main(int argc, char *argv[]) {
     (void)argc;
-    t_main *m_ls = (t_main *)malloc(sizeof(t_main));
+    t_dir *m_ls = (t_dir *)malloc(sizeof(t_dir));
     char *file_name = mx_abs_path(argv[1]);
 
     mx_init_m_struct(file_name, m_ls);

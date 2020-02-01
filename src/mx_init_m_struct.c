@@ -1,6 +1,6 @@
 #include "uls.h"
 
-void mx_init_m_struct(char *dir, t_main *m_ls) {
+void mx_init_m_struct(char *dir, t_dir *m_ls) {
     struct dirent *dp;
     DIR *dfd;
     int size = 0;
