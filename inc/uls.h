@@ -48,7 +48,8 @@ void mx_print_long(t_main *m_ls);
 void mx_sort_struct(t_main *m_ls);
 void mx_get_ugid(t_main *m_ls, int i);
 char *mx_abs_path(char *name);
-void mx_print_acl(t_main *m_ls, int i);
+//void mx_print_acl(t_main *m_ls, int i);
+void mx_print_acl(char *file);
 void mx_print_specific_time(time_t t);
 void mx_print_total_blocks(t_main *m_ls);
 
