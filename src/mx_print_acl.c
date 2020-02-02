@@ -31,10 +31,11 @@ void mx_print_acl(char *file) {
     acl = acl_get_file(file, ACL_TYPE_EXTENDED);
     if (xattr > 0)
         character = '@';
-    else if (acl == NULL)
-        character = ' ';
-    else
+    else if (acl != NULL) {
         character = '+';
-    acl_free(acl);
+        acl_free(acl);
+    }
+    else
+        character = ' ';
     mx_printchar(character);
 }

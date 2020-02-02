@@ -3,6 +3,7 @@
 static void make_path(t_dir *m_ls, int i);
 static void get_attribute(t_dir *m_ls, int i, char *file_name);
 static void get_max(t_dir *m_ls, int i);
+static void print_dir_name(t_main *ls, char *file_name);
 
 void mx_dirwalk(t_main *ls, char *file_name) {
     (void)ls;
@@ -18,6 +19,7 @@ void mx_dirwalk(t_main *ls, char *file_name) {
     }
     closedir(dfd);
     mx_sort_struct(m_ls);
+    print_dir_name(ls, ls->dir_name);
     mx_print_long(m_ls);
 }
 
@@ -61,4 +63,13 @@ static void get_max(t_dir *m_ls, int i) {
         m_ls->max_link_size = mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_nlink));
     if (mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_size)) > m_ls->max_byte_size)
         m_ls->max_byte_size = mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_size));
+}
+
+static void print_dir_name(t_main *ls, char *file_name) {
+    ls->dir_name = (char *)malloc(sizeof(mx_strdup(file_name)));
+        if (ls->d_count > 1) {
+            mx_printstr(ls->dir_name);
+            mx_printstr(":");
+            mx_printstr("\n");
+    }
 }
