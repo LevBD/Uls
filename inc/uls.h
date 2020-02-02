@@ -19,6 +19,16 @@
 
 #include "libmx/inc/libmx.h"
 
+typedef struct s_main {
+    char **file_arr;
+    char **dir_arr;
+    char **err_arr;
+
+    int f_count;
+    int d_count;
+    int e_count;
+} t_main;
+
 typedef struct s_file {
     struct stat stat;
     char  *perm;
@@ -38,10 +48,10 @@ typedef struct s_dir {
     int max_gid_size;
     int max_link_size;
     int max_byte_size;
-    char *file;
 } t_dir;
+
 char *mx_abs_path(char *name);
-void mx_dirwalk(t_dir *m_ls, char *dir);
+void mx_dirwalk(t_main *ls, char *file_name);
 void mx_get_permissions(t_dir *m_ls, int i);
 void mx_init_m_struct(char *dir, t_dir *m_ls);
 void mx_print_long(t_dir *m_ls);
@@ -52,5 +62,9 @@ char *mx_abs_path(char *name);
 void mx_print_acl(char *file);
 void mx_print_specific_time(time_t t);
 void mx_print_total_blocks(t_dir *m_ls);
+char mx_get_type_file(struct stat buf, char a);
+void mx_array_filling(t_main *ls, char** argv, int argc);
+void mx_filling_array_dir(t_main *ls);
+void mx_array_count(t_main *ls, char** argv, int argc);
 
 #endif

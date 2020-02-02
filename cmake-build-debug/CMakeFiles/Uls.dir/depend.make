@@ -176,13 +176,29 @@ CMakeFiles/Uls.dir/src/mx_abs_path.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_abs_path.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_abs_path.c.o: ../src/mx_abs_path.c
 
+CMakeFiles/Uls.dir/src/mx_array_count.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_array_count.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_array_count.c.o: ../src/mx_array_count.c
+
+CMakeFiles/Uls.dir/src/mx_array_filling.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_array_filling.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_array_filling.c.o: ../src/mx_array_filling.c
+
 CMakeFiles/Uls.dir/src/mx_dirwalk.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_dirwalk.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_dirwalk.c.o: ../src/mx_dirwalk.c
 
+CMakeFiles/Uls.dir/src/mx_filling_array_dir.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_filling_array_dir.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_filling_array_dir.c.o: ../src/mx_filling_array_dir.c
+
 CMakeFiles/Uls.dir/src/mx_get_permissions.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_get_permissions.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_get_permissions.c.o: ../src/mx_get_permissions.c
+
+CMakeFiles/Uls.dir/src/mx_get_type_file.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_get_type_file.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_get_type_file.c.o: ../src/mx_get_type_file.c
 
 CMakeFiles/Uls.dir/src/mx_get_ugid.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_get_ugid.c.o: ../libmx/inc/libmx.h

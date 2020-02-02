@@ -3,41 +3,23 @@
 static void make_path(t_dir *m_ls, int i);
 static void get_attribute(t_dir *m_ls, int i, char *file_name);
 static void get_max(t_dir *m_ls, int i);
-//static void init_s_file(t_main *m_s, char *path);
 
-void mx_dirwalk(t_dir *m_ls, char *file_name) {
+void mx_dirwalk(t_main *ls, char *file_name) {
+    (void)ls;
+    t_dir *m_ls = (t_dir *) malloc(sizeof(t_dir));
     struct dirent *dp;
     DIR *dfd;
 
-//    init_s_file(m_ls, file_name);
-//    t_file *file_arr = (t_file *)malloc(sizeof(t_file) * m_ls->file_count);
-//    m_ls->pointer = file_arr;
-//    mx_init_m_struct(file_name, m_ls);
+    mx_init_m_struct(file_name, m_ls);
     dfd = opendir(file_name);
     for (int i = 0;(dp = readdir(dfd)) != NULL; i++) {
         get_attribute(m_ls, i, dp->d_name);
         get_max(m_ls, i);
     }
     closedir(dfd);
+    mx_sort_struct(m_ls);
+    mx_print_long(m_ls);
 }
-
-//static void init_s_file(t_main *m_ls, char *path) {
-//    DIR *dir;
-//    struct dirent *dp;
-//    int size = 0;
-//
-//    dir = opendir(path);
-//
-//    if (dir == NULL)
-//        exit(-1);
-//    while ((dp =readdir(dir)) != NULL) {
-//        size++;
-//    }
-//    closedir(dir);
-//
-//    m_ls->path = path;
-//    m_ls->file_count = size;
-//}
 
 static void get_attribute(t_dir *m_ls, int i, char *file_name) {
     struct stat statbuf;

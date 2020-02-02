@@ -12,7 +12,11 @@ SRC = main.c \
     mx_abs_path.c \
     mx_print_acl.c \
     mx_print_specific_time.c \
-    mx_print_total_blocks.c
+    mx_print_total_blocks.c \
+    mx_get_type_file.c \
+    mx_array_filling.c \
+    mx_filling_array_dir.c \
+    mx_array_count.c
 
 OBJ = main.o \
     mx_dirwalk.o \
@@ -24,7 +28,11 @@ OBJ = main.o \
     mx_abs_path.o \
     mx_print_acl.o \
     mx_print_specific_time.o \
-    mx_print_total_blocks.o
+    mx_print_total_blocks.o \
+    mx_get_type_file.o \
+    mx_array_filling.o \
+    mx_filling_array_dir.o \
+    mx_array_count.o
 
 
 CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic

@@ -2,13 +2,15 @@
 
 int main(int argc, char *argv[]) {
     (void)argc;
-    t_dir *m_ls = (t_dir *)malloc(sizeof(t_dir));
-    char *file_name = mx_abs_path(argv[1]);
+    t_main *ls = (t_main *)malloc(sizeof(t_main));
 
-    mx_init_m_struct(file_name, m_ls);
-    mx_dirwalk(m_ls, file_name);
-    mx_sort_struct(m_ls);
-    mx_print_long(m_ls);
+    mx_array_count(ls, argv, argc);
+    ls->err_arr = (char**)malloc(sizeof(char*)*ls->e_count + 1);
+    ls->dir_arr = (char**)malloc(sizeof(char*)*ls->d_count + 1);
+    ls->file_arr = (char**)malloc(sizeof(char*)*ls->f_count + 1);
+    mx_array_filling(ls, argv, argc);
+    mx_filling_array_dir(ls);
 //    system("leaks -q uls");
+
     return 0;
 }

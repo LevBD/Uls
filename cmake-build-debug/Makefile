@@ -39,10 +39,10 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/19123C03-5384-4A47-8C6A-743264F7E1F4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/6EC4BB74-C59F-4A49-8DDB-8EAC58F7B1AB/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/19123C03-5384-4A47-8C6A-743264F7E1F4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/6EC4BB74-C59F-4A49-8DDB-8EAC58F7B1AB/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /Users/blevishche/study/Uls/Uls/cmake-build-debug
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/19123C03-5384-4A47-8C6A-743264F7E1F4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/6EC4BB74-C59F-4A49-8DDB-8EAC58F7B1AB/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : rebuild_cache
 
 # Special rule for the target rebuild_cache
@@ -70,7 +70,7 @@ rebuild_cache/fast: rebuild_cache
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/19123C03-5384-4A47-8C6A-743264F7E1F4/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	/private/var/folders/zz/zyxvpxvq6csfxvn_n0003ymh000zn4/T/AppTranslocation/6EC4BB74-C59F-4A49-8DDB-8EAC58F7B1AB/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -1689,6 +1689,60 @@ src/mx_abs_path.c.s:
 	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_abs_path.c.s
 .PHONY : src/mx_abs_path.c.s
 
+src/mx_array_count.o: src/mx_array_count.c.o
+
+.PHONY : src/mx_array_count.o
+
+# target to build an object file
+src/mx_array_count.c.o:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_array_count.c.o
+.PHONY : src/mx_array_count.c.o
+
+src/mx_array_count.i: src/mx_array_count.c.i
+
+.PHONY : src/mx_array_count.i
+
+# target to preprocess a source file
+src/mx_array_count.c.i:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_array_count.c.i
+.PHONY : src/mx_array_count.c.i
+
+src/mx_array_count.s: src/mx_array_count.c.s
+
+.PHONY : src/mx_array_count.s
+
+# target to generate assembly for a file
+src/mx_array_count.c.s:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_array_count.c.s
+.PHONY : src/mx_array_count.c.s
+
+src/mx_array_filling.o: src/mx_array_filling.c.o
+
+.PHONY : src/mx_array_filling.o
+
+# target to build an object file
+src/mx_array_filling.c.o:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_array_filling.c.o
+.PHONY : src/mx_array_filling.c.o
+
+src/mx_array_filling.i: src/mx_array_filling.c.i
+
+.PHONY : src/mx_array_filling.i
+
+# target to preprocess a source file
+src/mx_array_filling.c.i:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_array_filling.c.i
+.PHONY : src/mx_array_filling.c.i
+
+src/mx_array_filling.s: src/mx_array_filling.c.s
+
+.PHONY : src/mx_array_filling.s
+
+# target to generate assembly for a file
+src/mx_array_filling.c.s:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_array_filling.c.s
+.PHONY : src/mx_array_filling.c.s
+
 src/mx_dirwalk.o: src/mx_dirwalk.c.o
 
 .PHONY : src/mx_dirwalk.o
@@ -1716,6 +1770,33 @@ src/mx_dirwalk.c.s:
 	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_dirwalk.c.s
 .PHONY : src/mx_dirwalk.c.s
 
+src/mx_filling_array_dir.o: src/mx_filling_array_dir.c.o
+
+.PHONY : src/mx_filling_array_dir.o
+
+# target to build an object file
+src/mx_filling_array_dir.c.o:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_filling_array_dir.c.o
+.PHONY : src/mx_filling_array_dir.c.o
+
+src/mx_filling_array_dir.i: src/mx_filling_array_dir.c.i
+
+.PHONY : src/mx_filling_array_dir.i
+
+# target to preprocess a source file
+src/mx_filling_array_dir.c.i:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_filling_array_dir.c.i
+.PHONY : src/mx_filling_array_dir.c.i
+
+src/mx_filling_array_dir.s: src/mx_filling_array_dir.c.s
+
+.PHONY : src/mx_filling_array_dir.s
+
+# target to generate assembly for a file
+src/mx_filling_array_dir.c.s:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_filling_array_dir.c.s
+.PHONY : src/mx_filling_array_dir.c.s
+
 src/mx_get_permissions.o: src/mx_get_permissions.c.o
 
 .PHONY : src/mx_get_permissions.o
@@ -1742,6 +1823,33 @@ src/mx_get_permissions.s: src/mx_get_permissions.c.s
 src/mx_get_permissions.c.s:
 	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_get_permissions.c.s
 .PHONY : src/mx_get_permissions.c.s
+
+src/mx_get_type_file.o: src/mx_get_type_file.c.o
+
+.PHONY : src/mx_get_type_file.o
+
+# target to build an object file
+src/mx_get_type_file.c.o:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_get_type_file.c.o
+.PHONY : src/mx_get_type_file.c.o
+
+src/mx_get_type_file.i: src/mx_get_type_file.c.i
+
+.PHONY : src/mx_get_type_file.i
+
+# target to preprocess a source file
+src/mx_get_type_file.c.i:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_get_type_file.c.i
+.PHONY : src/mx_get_type_file.c.i
+
+src/mx_get_type_file.s: src/mx_get_type_file.c.s
+
+.PHONY : src/mx_get_type_file.s
+
+# target to generate assembly for a file
+src/mx_get_type_file.c.s:
+	$(MAKE) -f CMakeFiles/Uls.dir/build.make CMakeFiles/Uls.dir/src/mx_get_type_file.c.s
+.PHONY : src/mx_get_type_file.c.s
 
 src/mx_get_ugid.o: src/mx_get_ugid.c.o
 
@@ -2115,12 +2223,24 @@ help:
 	@echo "... src/mx_abs_path.o"
 	@echo "... src/mx_abs_path.i"
 	@echo "... src/mx_abs_path.s"
+	@echo "... src/mx_array_count.o"
+	@echo "... src/mx_array_count.i"
+	@echo "... src/mx_array_count.s"
+	@echo "... src/mx_array_filling.o"
+	@echo "... src/mx_array_filling.i"
+	@echo "... src/mx_array_filling.s"
 	@echo "... src/mx_dirwalk.o"
 	@echo "... src/mx_dirwalk.i"
 	@echo "... src/mx_dirwalk.s"
+	@echo "... src/mx_filling_array_dir.o"
+	@echo "... src/mx_filling_array_dir.i"
+	@echo "... src/mx_filling_array_dir.s"
 	@echo "... src/mx_get_permissions.o"
 	@echo "... src/mx_get_permissions.i"
 	@echo "... src/mx_get_permissions.s"
+	@echo "... src/mx_get_type_file.o"
+	@echo "... src/mx_get_type_file.i"
+	@echo "... src/mx_get_type_file.s"
 	@echo "... src/mx_get_ugid.o"
 	@echo "... src/mx_get_ugid.i"
 	@echo "... src/mx_get_ugid.s"
