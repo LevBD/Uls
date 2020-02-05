@@ -1,6 +1,6 @@
 #include "uls.h"
 
-//void mx_print_acl(t_main *m_ls, int i) {
+//void mx_print_acl(t_dir *m_ls, int i) {
 //    acl_t acl;
 //    ssize_t xattr;
 //    char chr;
@@ -23,19 +23,20 @@
 //    mx_printchar(chr);
 //}
 
-void mx_print_acl(char *file) {
+void mx_print_acl(t_dir *m_ls, int i) {
     char character;
     ssize_t xattr;
     acl_t acl;
+    char * file = m_ls->pointer[i].file_name;
+
     xattr = listxattr(file, NULL, 0, XATTR_NOFOLLOW);
     acl = acl_get_file(file, ACL_TYPE_EXTENDED);
     if (xattr > 0)
         character = '@';
-    else if (acl != NULL) {
-        character = '+';
-        acl_free(acl);
-    }
-    else
+    else if (acl == NULL)
         character = ' ';
+    else
+        character = '+';
+    acl_free(acl);
     mx_printchar(character);
 }

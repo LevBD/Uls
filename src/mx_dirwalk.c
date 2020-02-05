@@ -3,13 +3,14 @@
 static void make_path(t_dir *m_ls, int i);
 static void get_attribute(t_dir *m_ls, int i, char *file_name);
 static void get_max(t_dir *m_ls, int i);
-static void print_dir_name(t_main *ls, char *file_name);
+static void print_dir_name(t_main *ls, t_dir *m_ls);
 
 void mx_dirwalk(t_main *ls, char *file_name) {
     (void)ls;
     t_dir *m_ls = (t_dir *) malloc(sizeof(t_dir));
     struct dirent *dp;
     DIR *dfd;
+    int recursive = 1;
 
     mx_init_m_struct(file_name, m_ls);
     dfd = opendir(file_name);
@@ -19,8 +20,22 @@ void mx_dirwalk(t_main *ls, char *file_name) {
     }
     closedir(dfd);
     mx_sort_struct(m_ls);
-    print_dir_name(ls, ls->dir_name);
+    print_dir_name(ls, m_ls);
     mx_print_long(m_ls);
+    if (recursive) {
+        char **rec_arr = (char **)malloc((m_ls->rec_dir_c + 1) * sizeof(char *));
+        for (int i = 0, j = 0; i < m_ls->file_count; i++) {
+            if (S_ISDIR(m_ls->pointer[i].stat.st_mode) && (m_ls->pointer[i].file_name[0] != '.')) {
+                rec_arr[j] = m_ls->pointer[i].linkname;
+                j++;
+            }
+        }
+        rec_arr[m_ls->rec_dir_c] = NULL;
+        if (m_ls->rec_dir_c > 0) {
+            for (int i = 0; rec_arr[i] != NULL; i++)
+                mx_dirwalk(ls, mx_abs_path(rec_arr[i]));
+        }
+    }
 }
 
 static void get_attribute(t_dir *m_ls, int i, char *file_name) {
@@ -31,6 +46,8 @@ static void get_attribute(t_dir *m_ls, int i, char *file_name) {
     m_ls->pointer[i].stat = statbuf;
     mx_get_permissions(m_ls, i);
     mx_get_ugid(m_ls, i);
+    if (S_ISDIR(m_ls->pointer[i].stat.st_mode) && (m_ls->pointer[i].file_name[0] != '.'))
+        m_ls->rec_dir_c += 1;
 }
 
 static void make_path(t_dir *m_ls, int i) {
@@ -65,11 +82,12 @@ static void get_max(t_dir *m_ls, int i) {
         m_ls->max_byte_size = mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_size));
 }
 
-static void print_dir_name(t_main *ls, char *file_name) {
-    ls->dir_name = (char *)malloc(sizeof(mx_strdup(file_name)));
+static void print_dir_name(t_main *ls, t_dir *m_ls) {
+    char *file = m_ls->path;
+    ls->dir_name = (char *)malloc(sizeof(mx_strdup(file)));
         if (ls->d_count > 1) {
             mx_printstr(ls->dir_name);
             mx_printstr(":");
             mx_printstr("\n");
-    }
+        }
 }

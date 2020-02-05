@@ -27,11 +27,11 @@ void mx_get_permissions(t_dir *m_ls, int i) {
 
 static char *get_type(t_dir *m_ls, int i, char *res) {
 
-    res[0] = S_ISBLK(m_ls->pointer[i].stat.st_mode) ? 'b' :
-    S_ISCHR(m_ls->pointer[i].stat.st_mode) ? 'c' :
-    S_ISDIR(m_ls->pointer[i].stat.st_mode) ? 'd' :
-    S_ISSOCK(m_ls->pointer[i].stat.st_mode) ? 's' :
-    S_ISFIFO(m_ls->pointer[i].stat.st_mode) ? 'p' :
-    S_ISLNK(m_ls->pointer[i].stat.st_mode) ? 'l' : '-';
+    res[0] = SISBLK(m_ls->pointer[i].stat.st_mode) ? 'b' :
+    SISCHR(m_ls->pointer[i].stat.st_mode) ? 'c' :
+    SISDIR(m_ls->pointer[i].stat.st_mode) ? 'd' :
+    SISSOCK(m_ls->pointer[i].stat.st_mode) ? 's' :
+    SISFIFO(m_ls->pointer[i].stat.st_mode) ? 'p' :
+    SISLNK(m_ls->pointer[i].stat.st_mode) ? 'l' : '-';
     return res;
 }
