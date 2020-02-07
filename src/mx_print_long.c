@@ -4,6 +4,9 @@ static void print_spaces(int number);
 static void mx_print_linkname(t_dir *m_ls, int i);
 
 void mx_print_long(t_dir *m_ls) {
+    mx_printstr(m_ls->path);
+    mx_printstr(":");
+    mx_printstr("\n");
     mx_print_total_blocks(m_ls);
     for (int i = 0; i < m_ls->file_count; i++) {
         mx_printstr(m_ls->pointer[i].perm);

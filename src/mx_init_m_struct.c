@@ -22,4 +22,5 @@ void mx_init_m_struct(char *dir, t_dir *m_ls) {
     m_ls->max_uid_size = 0;
     m_ls->max_gid_size = 0;
     m_ls->max_byte_size = 0;
+//    free(file_arr);
 }

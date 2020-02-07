@@ -59,7 +59,6 @@ typedef struct s_main {
     char **file_arr;
     char **dir_arr;
     char **err_arr;
-    char *dir_name;
 
     int f_count;
     int d_count;
@@ -105,5 +104,6 @@ char mx_get_type_file(struct stat buf, char a);
 void mx_array_filling(t_main *ls, char** argv, int argc);
 void mx_filling_array_dir(t_main *ls);
 void mx_array_count(t_main *ls, char** argv, int argc);
+void mx_clean_struct(t_dir *m_ls);
 
 #endif
