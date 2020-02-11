@@ -14,7 +14,7 @@ void mx_init_m_struct(char *dir, t_dir *m_ls) {
     }
     closedir(dfd);
     m_ls->file_count = size;
-    m_ls->path = dir;
+    m_ls->path = mx_strdup(dir);
     t_file *file_arr = (t_file *)malloc(sizeof(t_file) * m_ls->file_count);
     m_ls->pointer = file_arr;
     m_ls->max_f_size = 0;

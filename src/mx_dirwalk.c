@@ -3,7 +3,7 @@
 static void make_path(t_dir *m_ls, int i);
 static void get_attribute(t_dir *m_ls, int i, char *file_name);
 static void get_max(t_dir *m_ls, int i);
-//static void print_dir_name(t_main *ls, t_dir *m_ls);
+
 
 void mx_dirwalk(t_main *ls, char *file_name) {
     (void)ls;
@@ -19,7 +19,7 @@ void mx_dirwalk(t_main *ls, char *file_name) {
         get_attribute(m_ls, i, dp->d_name);
         get_max(m_ls, i);
     }
-    printf(" dir %d\n", m_ls->rec_dir_c);
+//    printf(" dir %d\n", m_ls->rec_dir_c);
     closedir(dfd);
     mx_sort_struct(m_ls);
     mx_printstr("\n");
@@ -35,11 +35,15 @@ void mx_dirwalk(t_main *ls, char *file_name) {
         rec_arr[m_ls->rec_dir_c] = NULL;
 
         if (m_ls->rec_dir_c > 0) {
-            for (int i = 0; rec_arr[i] != NULL; i++)
+            for (int i = 0; rec_arr[i] != NULL; i++) {
                 mx_dirwalk(ls, mx_abs_path(rec_arr[i]));
+//                free(rec_arr[i]);
+            }
         }
+        if (rec_arr != NULL)
+            mx_strdel(rec_arr);
     }
-//    mx_clean_struct(m_ls);
+    mx_clean_struct(m_ls);
 }
 
 static void get_attribute(t_dir *m_ls, int i, char *file_name) {

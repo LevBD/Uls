@@ -11,6 +11,5 @@ int main(int argc, char *argv[]) {
     mx_array_filling(ls, argv, argc);
     mx_filling_array_dir(ls);
     system("leaks -q uls");
-
     return 0;
 }
