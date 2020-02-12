@@ -64,6 +64,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/blevishche/study/Uls/Uls/src/mx_abs_path.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_abs_path.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_array_count.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_array_count.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_array_filling.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_array_filling.c.o"
+  "/Users/blevishche/study/Uls/Uls/src/mx_clean_struct.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_clean_struct.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_dirwalk.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_dirwalk.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_filling_array_dir.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_filling_array_dir.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_get_permissions.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_get_permissions.c.o"

@@ -81,6 +81,7 @@ add_executable(Uls
         src/mx_abs_path.c
         src/mx_array_count.c
         src/mx_array_filling.c
+        src/mx_clean_struct.c
         src/mx_dirwalk.c
         src/mx_filling_array_dir.c
         src/mx_get_permissions.c

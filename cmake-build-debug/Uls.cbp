@@ -307,6 +307,9 @@
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_array_filling.c">
 			<Option target="Uls"/>
 		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_clean_struct.c">
+			<Option target="Uls"/>
+		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_dirwalk.c">
 			<Option target="Uls"/>
 		</Unit>

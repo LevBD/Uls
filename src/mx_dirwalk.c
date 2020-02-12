@@ -37,11 +37,8 @@ void mx_dirwalk(t_main *ls, char *file_name) {
         if (m_ls->rec_dir_c > 0) {
             for (int i = 0; rec_arr[i] != NULL; i++) {
                 mx_dirwalk(ls, mx_abs_path(rec_arr[i]));
-//                free(rec_arr[i]);
             }
         }
-        if (rec_arr != NULL)
-            mx_strdel(rec_arr);
     }
     mx_clean_struct(m_ls);
 }
@@ -71,7 +68,7 @@ static void make_path(t_dir *m_ls, int i) {
     }
     else {
         mx_strcpy(p, m_ls->path);
-        mx_strcpy(p + len_path -1 , "/");
+        mx_strcpy(p + len_path - 1 , "/");
         mx_strcpy((p + len_path), m_ls->pointer[i].file_name);
     }
     m_ls->pointer[i].linkname = p;

@@ -59,6 +59,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/Uls.dir/src/mx_abs_path.c.o"
   "CMakeFiles/Uls.dir/src/mx_array_count.c.o"
   "CMakeFiles/Uls.dir/src/mx_array_filling.c.o"
+  "CMakeFiles/Uls.dir/src/mx_clean_struct.c.o"
   "CMakeFiles/Uls.dir/src/mx_dirwalk.c.o"
   "CMakeFiles/Uls.dir/src/mx_filling_array_dir.c.o"
   "CMakeFiles/Uls.dir/src/mx_get_permissions.c.o"
