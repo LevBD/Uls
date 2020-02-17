@@ -4,7 +4,6 @@ static void clean_struct_s_file(t_file *file);
 
 void mx_clean_struct(t_dir *m_ls) {
         free(m_ls->path);
-//        free(&m_ls->max_byte_size);
     for (int i = 0; i < m_ls->file_count; i++)
             clean_struct_s_file(&m_ls->pointer[i]);
 }
@@ -37,5 +36,4 @@ static void clean_struct_s_file(t_file *file) {
     mx_strdel(&file->perm);
     mx_strdel(&file->user_name);
     mx_strdel(&file->linkname);
-//    free(&file->stat.st_blocks);
 }

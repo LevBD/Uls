@@ -9,7 +9,8 @@ int main(int argc, char *argv[]) {
     ls->dir_arr = (char**)malloc(sizeof(char*)*ls->d_count + 1);
     ls->file_arr = (char**)malloc(sizeof(char*)*ls->f_count + 1);
     mx_array_filling(ls, argv, argc);
+    mx_fill_arr_file(ls);
     mx_filling_array_dir(ls);
-    system("leaks -q uls");
+//    system("leaks -q uls");
     return 0;
 }

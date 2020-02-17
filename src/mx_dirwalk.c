@@ -10,7 +10,7 @@ void mx_dirwalk(t_main *ls, char *file_name) {
     t_dir *m_ls = (t_dir *) malloc(sizeof(t_dir));
     struct dirent *dp;
     DIR *dfd;
-    int recursive = 1;
+//    int recursive = 1;
     m_ls->rec_dir_c = 0;
 
     mx_init_m_struct(file_name, m_ls);
@@ -19,28 +19,27 @@ void mx_dirwalk(t_main *ls, char *file_name) {
         get_attribute(m_ls, i, dp->d_name);
         get_max(m_ls, i);
     }
-//    printf(" dir %d\n", m_ls->rec_dir_c);
     closedir(dfd);
     mx_sort_struct(m_ls);
     mx_printstr("\n");
     mx_print_long(m_ls);
-    if (recursive) {
-        char **rec_arr = (char **)malloc((m_ls->rec_dir_c + 1) * sizeof(char *));
-        for (int i = 0, j = 0; i < m_ls->file_count; i++) {
-            if (SISDIR(m_ls->pointer[i].stat.st_mode) && (m_ls->pointer[i].file_name[0] != '.')) {
-                rec_arr[j] = m_ls->pointer[i].linkname;
-                j++;
-            }
-        }
-        rec_arr[m_ls->rec_dir_c] = NULL;
-
-        if (m_ls->rec_dir_c > 0) {
-            for (int i = 0; rec_arr[i] != NULL; i++) {
-                mx_dirwalk(ls, mx_abs_path(rec_arr[i]));
-            }
-        }
-    }
-    mx_clean_struct(m_ls);
+//    if (recursive) {
+//        char **rec_arr = (char **)malloc((m_ls->rec_dir_c + 1) * sizeof(char *));
+//        for (int i = 0, j = 0; i < m_ls->file_count; i++) {
+//            if (SISDIR(m_ls->pointer[i].stat.st_mode) && (m_ls->pointer[i].file_name[0] != '.')) {
+//                rec_arr[j] = m_ls->pointer[i].linkname;
+//                j++;
+//            }
+//        }
+//        rec_arr[m_ls->rec_dir_c] = NULL;
+//
+//        if (m_ls->rec_dir_c > 0) {
+//            for (int i = 0; rec_arr[i] != NULL; i++) {
+//                mx_dirwalk(ls, mx_abs_path(rec_arr[i]));
+//            }
+//        }
+//    }
+//    mx_clean_struct(m_ls);
 }
 
 static void get_attribute(t_dir *m_ls, int i, char *file_name) {
