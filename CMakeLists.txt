@@ -8,7 +8,6 @@ include_directories(cmake-build-debug)
 include_directories(inc)
 include_directories(libmx)
 include_directories(libmx/inc)
-include_directories(libmx/src)
 include_directories(src)
 
 add_executable(Uls
@@ -19,6 +18,59 @@ add_executable(Uls
         cmake-build-debug/Uls.cbp
         inc/uls.h
         libmx/inc/libmx.h
+        libmx/obj/mx_binary_search.o
+        libmx/obj/mx_bubble_sort.o
+        libmx/obj/mx_count_substr.o
+        libmx/obj/mx_count_words.o
+        libmx/obj/mx_create_node.o
+        libmx/obj/mx_del_extra_spaces.o
+        libmx/obj/mx_del_strarr.o
+        libmx/obj/mx_file_to_str.o
+        libmx/obj/mx_foreach.o
+        libmx/obj/mx_get_char_index.o
+        libmx/obj/mx_get_substr_index.o
+        libmx/obj/mx_hex_to_nbr.o
+        libmx/obj/mx_isspace.o
+        libmx/obj/mx_itoa.o
+        libmx/obj/mx_list_size.o
+        libmx/obj/mx_memccpy.o
+        libmx/obj/mx_memchr.o
+        libmx/obj/mx_memcmp.o
+        libmx/obj/mx_memcpy.o
+        libmx/obj/mx_memmem.o
+        libmx/obj/mx_memmove.o
+        libmx/obj/mx_memrchr.o
+        libmx/obj/mx_memset.o
+        libmx/obj/mx_nbr_to_hex.o
+        libmx/obj/mx_pop_back.o
+        libmx/obj/mx_pop_front.o
+        libmx/obj/mx_pow.o
+        libmx/obj/mx_print_strarr.o
+        libmx/obj/mx_print_unicode.o
+        libmx/obj/mx_printchar.o
+        libmx/obj/mx_printint.o
+        libmx/obj/mx_printstr.o
+        libmx/obj/mx_push_back.o
+        libmx/obj/mx_push_front.o
+        libmx/obj/mx_realloc.o
+        libmx/obj/mx_replace_substr.o
+        libmx/obj/mx_sort_list.o
+        libmx/obj/mx_sqrt.o
+        libmx/obj/mx_str_reverse.o
+        libmx/obj/mx_strcat.o
+        libmx/obj/mx_strcmp.o
+        libmx/obj/mx_strcpy.o
+        libmx/obj/mx_strdel.o
+        libmx/obj/mx_strdup.o
+        libmx/obj/mx_strjoin.o
+        libmx/obj/mx_strlen.o
+        libmx/obj/mx_strncmp.o
+        libmx/obj/mx_strncpy.o
+        libmx/obj/mx_strndup.o
+        libmx/obj/mx_strnew.o
+        libmx/obj/mx_strstr.o
+        libmx/obj/mx_strtrim.o
+        libmx/obj/mx_swap_char.o
         libmx/src/mx_binary_search.c
         libmx/src/mx_bubble_sort.c
         libmx/src/mx_count_substr.c
@@ -76,7 +128,61 @@ add_executable(Uls
         libmx/src/mx_strtrim.c
         libmx/src/mx_swap_char.c
         libmx/libmx.a
+        libmx/libmx.h
         libmx/Makefile
+        libmx/mx_binary_search.c
+        libmx/mx_bubble_sort.c
+        libmx/mx_count_substr.c
+        libmx/mx_count_words.c
+        libmx/mx_create_node.c
+        libmx/mx_del_extra_spaces.c
+        libmx/mx_del_strarr.c
+        libmx/mx_file_to_str.c
+        libmx/mx_foreach.c
+        libmx/mx_get_char_index.c
+        libmx/mx_get_substr_index.c
+        libmx/mx_hex_to_nbr.c
+        libmx/mx_isspace.c
+        libmx/mx_itoa.c
+        libmx/mx_list_size.c
+        libmx/mx_memccpy.c
+        libmx/mx_memchr.c
+        libmx/mx_memcmp.c
+        libmx/mx_memcpy.c
+        libmx/mx_memmem.c
+        libmx/mx_memmove.c
+        libmx/mx_memrchr.c
+        libmx/mx_memset.c
+        libmx/mx_nbr_to_hex.c
+        libmx/mx_pop_back.c
+        libmx/mx_pop_front.c
+        libmx/mx_pow.c
+        libmx/mx_print_strarr.c
+        libmx/mx_print_unicode.c
+        libmx/mx_printchar.c
+        libmx/mx_printint.c
+        libmx/mx_printstr.c
+        libmx/mx_push_back.c
+        libmx/mx_push_front.c
+        libmx/mx_realloc.c
+        libmx/mx_replace_substr.c
+        libmx/mx_sort_list.c
+        libmx/mx_sqrt.c
+        libmx/mx_str_reverse.c
+        libmx/mx_strcat.c
+        libmx/mx_strcmp.c
+        libmx/mx_strcpy.c
+        libmx/mx_strdel.c
+        libmx/mx_strdup.c
+        libmx/mx_strjoin.c
+        libmx/mx_strlen.c
+        libmx/mx_strncmp.c
+        libmx/mx_strncpy.c
+        libmx/mx_strndup.c
+        libmx/mx_strnew.c
+        libmx/mx_strstr.c
+        libmx/mx_strtrim.c
+        libmx/mx_swap_char.c
         src/main.c
         src/mx_abs_path.c
         src/mx_array_count.c
@@ -93,6 +199,43 @@ add_executable(Uls
         src/mx_print_specific_time.c
         src/mx_print_total_blocks.c
         src/mx_sort_struct.c
+        src/mx_standard_format.c
         CMakeLists.txt
+        main.c
+        main.o
         Makefile
-        uls)
+        mx_abs_path.c
+        mx_abs_path.o
+        mx_array_count.c
+        mx_array_count.o
+        mx_array_filling.c
+        mx_array_filling.o
+        mx_clean_struct.c
+        mx_clean_struct.o
+        mx_dirwalk.c
+        mx_dirwalk.o
+        mx_fill_arr_file.c
+        mx_fill_arr_file.o
+        mx_filling_array_dir.c
+        mx_filling_array_dir.o
+        mx_get_permissions.c
+        mx_get_permissions.o
+        mx_get_type_file.c
+        mx_get_type_file.o
+        mx_get_ugid.c
+        mx_get_ugid.o
+        mx_init_m_struct.c
+        mx_init_m_struct.o
+        mx_print_acl.c
+        mx_print_acl.o
+        mx_print_long.c
+        mx_print_long.o
+        mx_print_specific_time.c
+        mx_print_specific_time.o
+        mx_print_total_blocks.c
+        mx_print_total_blocks.o
+        mx_sort_struct.c
+        mx_sort_struct.o
+        mx_standard_format.c
+        uls
+        uls.h)

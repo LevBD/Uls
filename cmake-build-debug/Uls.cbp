@@ -49,7 +49,6 @@
 					<Add directory="/Users/blevishche/study/Uls/Uls/inc"/>
 					<Add directory="/Users/blevishche/study/Uls/Uls/libmx"/>
 					<Add directory="/Users/blevishche/study/Uls/Uls/libmx/inc"/>
-					<Add directory="/Users/blevishche/study/Uls/Uls/libmx/src"/>
 					<Add directory="/Users/blevishche/study/Uls/Uls/src"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
@@ -77,7 +76,6 @@
 					<Add directory="/Users/blevishche/study/Uls/Uls/inc"/>
 					<Add directory="/Users/blevishche/study/Uls/Uls/libmx"/>
 					<Add directory="/Users/blevishche/study/Uls/Uls/libmx/inc"/>
-					<Add directory="/Users/blevishche/study/Uls/Uls/libmx/src"/>
 					<Add directory="/Users/blevishche/study/Uls/Uls/src"/>
 					<Add directory="/Library/Developer/CommandLineTools/usr/include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
@@ -125,6 +123,327 @@
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/libmx.a">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/libmx.h">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_binary_search.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_bubble_sort.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_count_substr.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_count_words.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_create_node.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_del_extra_spaces.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_del_strarr.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_file_to_str.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_foreach.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_get_char_index.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_get_substr_index.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_hex_to_nbr.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_isspace.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_itoa.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_list_size.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_memccpy.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_memchr.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_memcmp.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_memcpy.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_memmem.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_memmove.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_memrchr.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_memset.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_nbr_to_hex.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_pop_back.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_pop_front.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_pow.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_print_strarr.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_print_unicode.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_printchar.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_printint.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_printstr.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_push_back.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_push_front.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_realloc.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_replace_substr.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_sort_list.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_sqrt.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_str_reverse.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_strcat.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_strcmp.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_strcpy.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_strdel.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_strdup.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_strjoin.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_strlen.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_strncmp.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_strncpy.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_strndup.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_strnew.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_strstr.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_strtrim.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/mx_swap_char.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_binary_search.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_bubble_sort.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_count_substr.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_count_words.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_create_node.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_del_extra_spaces.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_del_strarr.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_file_to_str.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_foreach.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_get_char_index.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_get_substr_index.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_hex_to_nbr.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_isspace.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_itoa.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_list_size.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_memccpy.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_memchr.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_memcmp.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_memcpy.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_memmem.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_memmove.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_memrchr.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_memset.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_nbr_to_hex.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_pop_back.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_pop_front.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_pow.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_print_strarr.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_print_unicode.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_printchar.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_printint.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_printstr.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_push_back.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_push_front.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_realloc.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_replace_substr.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_sort_list.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_sqrt.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_str_reverse.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_strcat.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_strcmp.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_strcpy.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_strdel.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_strdup.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_strjoin.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_strlen.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_strncmp.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_strncpy.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_strndup.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_strnew.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_strstr.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_strtrim.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/obj/mx_swap_char.o">
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/src/mx_binary_search.c">
@@ -295,6 +614,111 @@
 		<Unit filename="/Users/blevishche/study/Uls/Uls/libmx/src/mx_swap_char.c">
 			<Option target="Uls"/>
 		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/main.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/main.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_abs_path.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_abs_path.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_array_count.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_array_count.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_array_filling.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_array_filling.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_clean_struct.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_clean_struct.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_dirwalk.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_dirwalk.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_fill_arr_file.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_fill_arr_file.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_filling_array_dir.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_filling_array_dir.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_get_permissions.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_get_permissions.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_get_type_file.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_get_type_file.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_get_ugid.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_get_ugid.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_init_m_struct.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_init_m_struct.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_print_acl.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_print_acl.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_print_long.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_print_long.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_print_specific_time.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_print_specific_time.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_print_total_blocks.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_print_total_blocks.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_sort_struct.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_sort_struct.o">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/mx_standard_format.c">
+			<Option target="Uls"/>
+		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/main.c">
 			<Option target="Uls"/>
 		</Unit>
@@ -311,6 +735,9 @@
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_dirwalk.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_fill_arr_file.c">
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_filling_array_dir.c">
@@ -343,7 +770,13 @@
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_sort_struct.c">
 			<Option target="Uls"/>
 		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_standard_format.c">
+			<Option target="Uls"/>
+		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/uls">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/uls.h">
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/CMakeLists.txt">
