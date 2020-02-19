@@ -6,7 +6,7 @@ static void get_max(t_dir *m_ls, int i);
 
 
 void mx_dirwalk(t_main *ls, char *file_name) {
-    (void)ls;
+//    (void)ls;
     t_dir *m_ls = (t_dir *) malloc(sizeof(t_dir));
     struct dirent *dp;
     DIR *dfd;
@@ -22,8 +22,10 @@ void mx_dirwalk(t_main *ls, char *file_name) {
     closedir(dfd);
     mx_sort_struct(m_ls);
     mx_printstr("\n");
-    mx_standard_format(ls, m_ls);
-//    mx_print_long(m_ls);
+    if (ls->l != 1)
+        mx_standard_format(ls, m_ls);
+    else
+        mx_print_long(m_ls);
 //    if (recursive) {
 //        char **rec_arr = (char **)malloc((m_ls->rec_dir_c + 1) * sizeof(char *));
 //        for (int i = 0, j = 0; i < m_ls->file_count; i++) {

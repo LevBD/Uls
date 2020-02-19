@@ -67,6 +67,8 @@ typedef struct s_main {
     int R;
     int G;
     int l;
+    int a;
+    int A;
 } t_main;
 
 typedef struct s_file {

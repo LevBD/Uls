@@ -4,7 +4,7 @@ static void mx_print_tab(int len_name, int maxlen);
 static void print_f_names(t_main *ls, t_dir *m_ls, int maxlen, int win);
 
 void mx_standard_format(t_main *ls,t_dir *m_ls) {
-    (void)ls;
+//    (void)ls;
     int maxlen = m_ls->max_f_size;
     struct winsize win;
 
