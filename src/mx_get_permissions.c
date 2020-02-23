@@ -1,6 +1,14 @@
 #include "uls.h"
 
-static char *get_type(t_dir *m_ls, int i, char *res);
+static char *get_type(t_dir *m_ls, int i, char *res) {
+    res[0] = SISBLK(m_ls->pointer[i].stat.st_mode) ? 'b' :
+             SISCHR(m_ls->pointer[i].stat.st_mode) ? 'c' :
+             SISDIR(m_ls->pointer[i].stat.st_mode) ? 'd' :
+             SISSOCK(m_ls->pointer[i].stat.st_mode) ? 's' :
+             SISFIFO(m_ls->pointer[i].stat.st_mode) ? 'p' :
+             SISLNK(m_ls->pointer[i].stat.st_mode) ? 'l' : '-';
+    return res;
+}
 
 void mx_get_permissions(t_dir *m_ls, int i) {
     char *res = mx_strnew(10);
@@ -23,15 +31,4 @@ void mx_get_permissions(t_dir *m_ls, int i) {
     ((m_ls->pointer[i].stat.st_mode & S_ISTXT) ? 'T' : '-');
     m_ls->pointer[i].perm = mx_strdup(res);
     free(res);
-}
-
-static char *get_type(t_dir *m_ls, int i, char *res) {
-
-    res[0] = SISBLK(m_ls->pointer[i].stat.st_mode) ? 'b' :
-    SISCHR(m_ls->pointer[i].stat.st_mode) ? 'c' :
-    SISDIR(m_ls->pointer[i].stat.st_mode) ? 'd' :
-    SISSOCK(m_ls->pointer[i].stat.st_mode) ? 's' :
-    SISFIFO(m_ls->pointer[i].stat.st_mode) ? 'p' :
-    SISLNK(m_ls->pointer[i].stat.st_mode) ? 'l' : '-';
-    return res;
 }

@@ -223,9 +223,17 @@ CMakeFiles/Uls.dir/src/mx_print_acl.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_print_acl.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_print_acl.c.o: ../src/mx_print_acl.c
 
+CMakeFiles/Uls.dir/src/mx_print_arg_name.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_print_arg_name.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_print_arg_name.c.o: ../src/mx_print_arg_name.c
+
 CMakeFiles/Uls.dir/src/mx_print_long.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_print_long.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_print_long.c.o: ../src/mx_print_long.c
+
+CMakeFiles/Uls.dir/src/mx_print_recursive.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_print_recursive.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_print_recursive.c.o: ../src/mx_print_recursive.c
 
 CMakeFiles/Uls.dir/src/mx_print_specific_time.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_print_specific_time.c.o: ../libmx/inc/libmx.h

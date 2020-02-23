@@ -85,7 +85,9 @@ add_executable(Uls
         src/mx_init_m_struct.c
         src/mx_parser.c
         src/mx_print_acl.c
+        src/mx_print_arg_name.c
         src/mx_print_long.c
+        src/mx_print_recursive.c
         src/mx_print_specific_time.c
         src/mx_print_total_blocks.c
         src/mx_sort_struct.c

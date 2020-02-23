@@ -1,15 +1,5 @@
 #include "uls.h"
 
-static int count_dir(char** argv, int argc);
-static int count_file(char** argv, int argc);
-static int count_error(char** argv, int argc);
-
-void mx_array_count(t_main *ls, char** argv, int argc) {
-    ls->e_count = count_error(argv, argc);
-    ls->d_count = count_dir(argv, argc);
-    ls->f_count = count_file(argv, argc);
-}
-
 static int count_dir(char** argv, int argc) {
     int count = 0;
     char c = '\0';
@@ -47,4 +37,10 @@ static int count_error(char** argv, int argc) {
             count++;
     }
     return count;
+}
+
+void mx_array_count(t_main *ls, char** argv, int argc) {
+    ls->e_count = count_error(argv, argc);
+    ls->d_count = count_dir(argv, argc);
+    ls->f_count = count_file(argv, argc);
 }

@@ -1,11 +1,17 @@
 #include "uls.h"
 
-static void print_err_arg(char *c);
-
 static int is_flag(const char *s) {
     if (*s == '-' && mx_strlen(s) > 1)
         return 1;
     return 0;
+}
+
+static void print_err_arg(char *c) {
+    mx_printerr("uls: ");
+    mx_printerr(c);
+    mx_printerr(": ");
+    mx_printerr(strerror(errno));
+    mx_printerr("\n");
 }
 
 static void pars_flags(char *argv,t_main *ls) {
@@ -26,14 +32,6 @@ static void pars_flags(char *argv,t_main *ls) {
             print_err_arg(&argv[i]);
         i++;
     }
-}
-
-static void print_err_arg(char *c) {
-    mx_printerr("uls: ");
-    mx_printerr(c);
-    mx_printerr(": ");
-    mx_printerr(strerror(errno));
-    mx_printerr("\n");
 }
 
 void mx_read_args(int argc, char **argv, t_main *ls) {

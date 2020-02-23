@@ -1,7 +1,22 @@
 #include "uls.h"
 
-static void print_spaces(int number);
-static void mx_print_linkname(t_dir *m_ls, int i);
+static void print_spaces(int number) {
+    for (int i = 0; i < number; i++) {
+        mx_printchar(' ');
+    }
+}
+
+static void mx_print_linkname(t_dir *m_ls, int i) {
+    char link[255];
+    int size = 0;
+    if (!m_ls->pointer[i].linkname)
+        return;
+    size = readlink(m_ls->pointer[i].linkname, link, 255);
+    link[size] = '\0';
+    mx_printstr(" -> ");
+    mx_printstr(link);
+    free(link);
+}
 
 void mx_print_long(t_dir *m_ls, t_main *ls) {
     mx_print_arg_name(ls,m_ls);
@@ -30,22 +45,4 @@ void mx_print_long(t_dir *m_ls, t_main *ls) {
             mx_print_linkname(m_ls,i);
         mx_printstr("\n");
     }
-}
-
-static void print_spaces(int number) {
-    for (int i = 0; i < number; i++) {
-        mx_printchar(' ');
-    }
-}
-
-static void mx_print_linkname(t_dir *m_ls, int i) {
-    char link[255];
-    int size = 0;
-    if (!m_ls->pointer[i].linkname)
-        return;
-    size = readlink(m_ls->pointer[i].linkname, link, 255);
-    link[size] = '\0';
-    mx_printstr(" -> ");
-    mx_printstr(link);
-    free(link);
 }

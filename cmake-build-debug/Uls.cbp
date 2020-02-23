@@ -317,7 +317,13 @@
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_print_acl.c">
 			<Option target="Uls"/>
 		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_print_arg_name.c">
+			<Option target="Uls"/>
+		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_print_long.c">
+			<Option target="Uls"/>
+		</Unit>
+		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_print_recursive.c">
 			<Option target="Uls"/>
 		</Unit>
 		<Unit filename="/Users/blevishche/study/Uls/Uls/src/mx_print_specific_time.c">

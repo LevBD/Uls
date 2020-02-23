@@ -1,20 +1,16 @@
 #include "uls.h"
 
-static void mx_print_tab(int len_name, int maxlen);
-static void print_f_names(t_main *ls, t_dir *m_ls, int maxlen, int win);
+static void mx_print_tab(int len_name, int maxlen) {
+    int count;
+    int p;
 
-void mx_standard_format(t_main *ls,t_dir *m_ls) {
-//    (void)ls;
-    int maxlen = m_ls->max_f_size;
-    struct winsize win;
-
-    ioctl(STDOUT_FILENO, TIOCGWINSZ, &win);
-    if (ls->d_count > 1) {
-        mx_printstr(m_ls->path);
-        mx_printstr(":");
-        mx_printstr("\n");
+    for (p = 1; ; p++) {
+        if (maxlen < (p * 8 - 1))
+            break;
     }
-    print_f_names(ls, m_ls, maxlen, win.ws_col);
+    count = p * 8 - len_name;
+    for (int i = 0; i < count; i += 8)
+        mx_printchar('\t');
 }
 
 static void print_f_names(t_main *ls, t_dir *m_ls, int maxlen, int win) {
@@ -38,15 +34,15 @@ static void print_f_names(t_main *ls, t_dir *m_ls, int maxlen, int win) {
     }
 }
 
-static void mx_print_tab(int len_name, int maxlen) {
-    int count;
-    int p;
+void mx_standard_format(t_main *ls,t_dir *m_ls) {
+    int maxlen = m_ls->max_f_size;
+    struct winsize win;
 
-    for (p = 1; ; p++) {
-        if (maxlen < (p * 8 - 1))
-            break;
+    ioctl(STDOUT_FILENO, TIOCGWINSZ, &win);
+    if (ls->d_count > 1) {
+        mx_printstr(m_ls->path);
+        mx_printstr(":");
+        mx_printstr("\n");
     }
-    count = p * 8 - len_name;
-    for (int i = 0; i < count; i += 8)
-        mx_printchar('\t');
+    print_f_names(ls, m_ls, maxlen, win.ws_col);
 }
