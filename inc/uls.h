@@ -97,7 +97,7 @@ char *mx_abs_path(char *name);
 void mx_dirwalk(t_main *ls, char *file_name);
 void mx_get_permissions(t_dir *m_ls, int i);
 void mx_init_m_struct(char *dir, t_dir *m_ls);
-void mx_print_long(t_dir *m_ls);
+void mx_print_long(t_dir *m_ls, t_main *ls);
 void mx_sort_struct(t_dir *m_ls);
 void mx_get_ugid(t_dir *m_ls, int i);
 //void mx_print_acl(t_dir *m_ls, int i);
@@ -111,5 +111,7 @@ void mx_array_count(t_main *ls, char** argv, int argc);
 void mx_clean_struct(t_dir *m_ls);
 void mx_standard_format(t_main *ls, t_dir *m_ls);
 void mx_read_args(int argc, char **argv, t_main *ls);
+void mx_print_arg_name(t_main *ls, t_dir *m_ls);
+void mx_print_recursive(t_main *ls, t_dir *m_ls);
 
 #endif

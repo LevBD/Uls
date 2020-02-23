@@ -21,26 +21,12 @@ void mx_dirwalk(t_main *ls, char *file_name) {
     closedir(dfd);
     mx_sort_struct(m_ls);
     mx_printstr("\n");
-    if (ls->l != 1)
-        mx_standard_format(ls, m_ls);
+    if (ls->l == 1)
+        mx_print_long(m_ls, ls);
     else
-        mx_print_long(m_ls);
-    if (ls->R) {
-        char **rec_arr = (char **)malloc((m_ls->rec_dir_c + 1) * sizeof(char *));
-        for (int i = 0, j = 0; i < m_ls->file_count; i++) {
-            if (SISDIR(m_ls->pointer[i].stat.st_mode) && (m_ls->pointer[i].file_name[0] != '.')) {
-                rec_arr[j] = m_ls->pointer[i].linkname;
-                j++;
-            }
-        }
-        rec_arr[m_ls->rec_dir_c] = NULL;
-
-        if (m_ls->rec_dir_c > 0) {
-            for (int i = 0; rec_arr[i] != NULL; i++) {
-                mx_dirwalk(ls, mx_abs_path(rec_arr[i]));
-            }
-        }
-    }
+        mx_standard_format(ls, m_ls);
+    if (ls->R == 1)
+        mx_print_recursive(ls, m_ls);
     mx_clean_struct(m_ls);
 }
 

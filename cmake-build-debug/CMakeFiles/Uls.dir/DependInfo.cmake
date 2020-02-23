@@ -34,6 +34,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/blevishche/study/Uls/Uls/libmx/src/mx_print_strarr.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/libmx/src/mx_print_strarr.c.o"
   "/Users/blevishche/study/Uls/Uls/libmx/src/mx_print_unicode.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/libmx/src/mx_print_unicode.c.o"
   "/Users/blevishche/study/Uls/Uls/libmx/src/mx_printchar.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/libmx/src/mx_printchar.c.o"
+  "/Users/blevishche/study/Uls/Uls/libmx/src/mx_printerr.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/libmx/src/mx_printerr.c.o"
   "/Users/blevishche/study/Uls/Uls/libmx/src/mx_printint.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/libmx/src/mx_printint.c.o"
   "/Users/blevishche/study/Uls/Uls/libmx/src/mx_printstr.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/libmx/src/mx_printstr.c.o"
   "/Users/blevishche/study/Uls/Uls/libmx/src/mx_push_back.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/libmx/src/mx_push_back.c.o"
@@ -71,6 +72,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/blevishche/study/Uls/Uls/src/mx_get_type_file.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_get_type_file.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_get_ugid.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_get_ugid.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_init_m_struct.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o"
+  "/Users/blevishche/study/Uls/Uls/src/mx_parser.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_parser.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_print_acl.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_print_acl.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_print_long.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_print_long.c.o"
   "/Users/blevishche/study/Uls/Uls/src/mx_print_specific_time.c" "/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir/src/mx_print_specific_time.c.o"
@@ -83,7 +85,6 @@ set(CMAKE_C_COMPILER_ID "AppleClang")
 # The include file search paths:
 set(CMAKE_C_TARGET_INCLUDE_PATH
   "../."
-  "."
   "../inc"
   "../libmx"
   "../libmx/inc"

@@ -4,7 +4,6 @@ project(Uls)
 set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
-include_directories(cmake-build-debug)
 include_directories(inc)
 include_directories(libmx)
 include_directories(libmx/inc)
@@ -12,11 +11,6 @@ include_directories(libmx/src)
 include_directories(src)
 
 add_executable(Uls
-        cmake-build-debug/cmake_install.cmake
-        cmake-build-debug/CMakeCache.txt
-        cmake-build-debug/Makefile
-        cmake-build-debug/Uls
-        cmake-build-debug/Uls.cbp
         inc/uls.h
         libmx/inc/libmx.h
         libmx/src/mx_binary_search.c
@@ -49,6 +43,7 @@ add_executable(Uls
         libmx/src/mx_print_strarr.c
         libmx/src/mx_print_unicode.c
         libmx/src/mx_printchar.c
+        libmx/src/mx_printerr.c
         libmx/src/mx_printint.c
         libmx/src/mx_printstr.c
         libmx/src/mx_push_back.c
@@ -88,12 +83,12 @@ add_executable(Uls
         src/mx_get_type_file.c
         src/mx_get_ugid.c
         src/mx_init_m_struct.c
+        src/mx_parser.c
         src/mx_print_acl.c
         src/mx_print_long.c
         src/mx_print_specific_time.c
         src/mx_print_total_blocks.c
         src/mx_sort_struct.c
         src/mx_standard_format.c
-        CMakeLists.txt
         Makefile
         uls)

@@ -91,6 +91,9 @@ CMakeFiles/Uls.dir/libmx/src/mx_print_unicode.c.o: ../libmx/src/mx_print_unicode
 CMakeFiles/Uls.dir/libmx/src/mx_printchar.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/libmx/src/mx_printchar.c.o: ../libmx/src/mx_printchar.c
 
+CMakeFiles/Uls.dir/libmx/src/mx_printerr.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/libmx/src/mx_printerr.c.o: ../libmx/src/mx_printerr.c
+
 CMakeFiles/Uls.dir/libmx/src/mx_printint.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/libmx/src/mx_printint.c.o: ../libmx/src/mx_printint.c
 
@@ -211,6 +214,10 @@ CMakeFiles/Uls.dir/src/mx_get_ugid.c.o: ../src/mx_get_ugid.c
 CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_init_m_struct.c.o: ../src/mx_init_m_struct.c
+
+CMakeFiles/Uls.dir/src/mx_parser.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_parser.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_parser.c.o: ../src/mx_parser.c
 
 CMakeFiles/Uls.dir/src/mx_print_acl.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_print_acl.c.o: ../libmx/inc/libmx.h
