@@ -9,6 +9,11 @@ void mx_standard_format(t_main *ls,t_dir *m_ls) {
     struct winsize win;
 
     ioctl(STDOUT_FILENO, TIOCGWINSZ, &win);
+    if (ls->d_count > 1) {
+        mx_printstr(m_ls->path);
+        mx_printstr(":");
+        mx_printstr("\n");
+    }
     print_f_names(ls, m_ls, maxlen, win.ws_col);
 }
 
