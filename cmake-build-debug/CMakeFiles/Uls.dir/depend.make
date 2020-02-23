@@ -184,6 +184,10 @@ CMakeFiles/Uls.dir/src/mx_array_filling.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_array_filling.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_array_filling.c.o: ../src/mx_array_filling.c
 
+CMakeFiles/Uls.dir/src/mx_clean_struct.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_clean_struct.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_clean_struct.c.o: ../src/mx_clean_struct.c
+
 CMakeFiles/Uls.dir/src/mx_dirwalk.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_dirwalk.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_dirwalk.c.o: ../src/mx_dirwalk.c
@@ -227,4 +231,8 @@ CMakeFiles/Uls.dir/src/mx_print_total_blocks.c.o: ../src/mx_print_total_blocks.c
 CMakeFiles/Uls.dir/src/mx_sort_struct.c.o: ../inc/uls.h
 CMakeFiles/Uls.dir/src/mx_sort_struct.c.o: ../libmx/inc/libmx.h
 CMakeFiles/Uls.dir/src/mx_sort_struct.c.o: ../src/mx_sort_struct.c
+
+CMakeFiles/Uls.dir/src/mx_standard_format.c.o: ../inc/uls.h
+CMakeFiles/Uls.dir/src/mx_standard_format.c.o: ../libmx/inc/libmx.h
+CMakeFiles/Uls.dir/src/mx_standard_format.c.o: ../src/mx_standard_format.c
 

@@ -54,7 +54,8 @@ SRC = mx_sort_list.c\
 	mx_count_words.c\
 	mx_count_substr.c\
 	mx_bubble_sort.c\
-	mx_binary_search.c
+	mx_binary_search.c\
+	mx_printerr.c
 
 OBJ = mx_sort_list.o\
 	mx_list_size.o\
@@ -108,7 +109,8 @@ OBJ = mx_sort_list.o\
 	mx_count_words.o\
 	mx_count_substr.o\
 	mx_bubble_sort.o\
-	mx_binary_search.o
+	mx_binary_search.o\
+	mx_printerr.o
 
 CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic
 

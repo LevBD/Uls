@@ -18,7 +18,8 @@ SRC = main.c \
     mx_filling_array_dir.c \
     mx_array_count.c \
     mx_clean_struct.c \
-    mx_standard_format.c
+    mx_standard_format.c \
+    mx_parser.c
 
 OBJ = main.o \
     mx_dirwalk.o \
@@ -36,7 +37,8 @@ OBJ = main.o \
     mx_filling_array_dir.o \
     mx_array_count.o \
     mx_clean_struct.o \
-    mx_standard_format.o
+    mx_standard_format.o \
+    mx_parser.o
 
 CFLAGS = -std=c11 -Wall -Wextra -Werror -Wpedantic
 

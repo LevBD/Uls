@@ -65,7 +65,7 @@ typedef struct s_main {
     int e_count;
 
     int R;
-    int G;
+    int S;
     int l;
     int a;
     int A;
@@ -110,5 +110,6 @@ void mx_filling_array_dir(t_main *ls);
 void mx_array_count(t_main *ls, char** argv, int argc);
 void mx_clean_struct(t_dir *m_ls);
 void mx_standard_format(t_main *ls, t_dir *m_ls);
+void mx_read_args(int argc, char **argv, t_main *ls);
 
 #endif

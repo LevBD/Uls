@@ -32,7 +32,6 @@ void mx_print_long(t_dir *m_ls) {
             mx_print_linkname(m_ls,i);
         mx_printstr("\n");
     }
-
 }
 
 static void print_spaces(int number) {

@@ -56,6 +56,7 @@ char *mx_strjoin(const char *s1, const char *s2);
 char *mx_file_to_str(const char *file);
 int mx_read_line(char **lineptr, size_t buf_size, char delim, const int fd); //Не сделана;
 char *mx_replace_substr(const char *str, const char *sub, const char *replace);
+void mx_printerr(const char *c);
 
 // Memory pack
 void *mx_memset(void *b, int c, size_t len);
