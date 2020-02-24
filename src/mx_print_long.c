@@ -15,7 +15,7 @@ static void mx_print_linkname(t_dir *m_ls, int i) {
     link[size] = '\0';
     mx_printstr(" -> ");
     mx_printstr(link);
-    free(link);
+//    free(link);
 }
 
 void mx_print_long(t_dir *m_ls, t_main *ls) {
@@ -23,7 +23,7 @@ void mx_print_long(t_dir *m_ls, t_main *ls) {
     mx_print_total_blocks(m_ls);
     for (int i = 0; i < m_ls->file_count; i++) {
         mx_printstr(m_ls->pointer[i].perm);
-        mx_print_acl(m_ls, i);
+        mx_print_acl(m_ls->pointer[i].linkname);
         print_spaces(m_ls->max_link_size + 1
                      - mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_nlink)));
         mx_printint(m_ls->pointer[i].stat.st_nlink);

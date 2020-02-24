@@ -9,7 +9,7 @@
 //
 //    acl = acl_get_link_np(file, ACL_TYPE_EXTENDED);
 //    if (acl && acl_get_entry(acl, ACL_FIRST_ENTRY, &dummy) == -1) {
-//        acl_free(acl);
+////        acl_free(acl);
 //        acl = NULL;
 //    }
 //    xattr = listxattr(file, NULL, 0, XATTR_NOFOLLOW);
@@ -23,20 +23,37 @@
 //    mx_printchar(chr);
 //}
 
-void mx_print_acl(t_dir *m_ls, int i) {
-    char character;
+//void mx_print_acl(t_dir *m_ls, int i) {
+//    char character;
+//    ssize_t xattr;
+//    acl_t acl;
+//    char * file = m_ls->pointer[i].file_name;
+//
+//    xattr = listxattr(file, NULL, 0, XATTR_NOFOLLOW);
+//    acl = acl_get_file(file, ACL_TYPE_EXTENDED);
+//    if (xattr > 0)
+//        character = '@';
+//    else if (acl == NULL)
+//        character = ' ';
+//    else
+//        character = '+';
+//    acl_free(acl);
+//    mx_printchar(character);
+//}
+
+void mx_print_acl(char *file) {
+    char c;
     ssize_t xattr;
     acl_t acl;
-    char * file = m_ls->pointer[i].file_name;
 
     xattr = listxattr(file, NULL, 0, XATTR_NOFOLLOW);
     acl = acl_get_file(file, ACL_TYPE_EXTENDED);
     if (xattr > 0)
-        character = '@';
+        c = '@';
     else if (acl == NULL)
-        character = ' ';
+        c = ' ';
     else
-        character = '+';
+        c = '+';
     acl_free(acl);
-    mx_printchar(character);
+    mx_printchar(c);
 }
