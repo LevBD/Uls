@@ -15,7 +15,6 @@ static void mx_print_linkname(t_dir *m_ls, int i) {
     link[size] = '\0';
     mx_printstr(" -> ");
     mx_printstr(link);
-//    free(link);
 }
 
 void mx_print_long(t_dir *m_ls, t_main *ls) {
