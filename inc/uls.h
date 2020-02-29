@@ -19,6 +19,9 @@
 
 #include "libmx/inc/libmx.h"
 
+#define MX_MAJOR(x)  ((int32_t)(((u_int32_t)(x) >> 24) & 0xff))
+#define MX_MINOR(x)  ((int32_t)((x) & 0xffffff))
+
 #define S_IFMT          0170000         /* type of file mask */
 #define S_IFIFO         0010000         /* named pipe (fifo) */
 #define S_IFCHR         0020000         /* character special */
@@ -100,8 +103,6 @@ void mx_init_m_struct(char *dir, t_dir *m_ls);
 void mx_print_long(t_dir *m_ls, t_main *ls);
 void mx_sort_struct(t_dir *m_ls);
 void mx_get_ugid(t_dir *m_ls, int i);
-//void mx_print_acl(t_dir *m_ls, int i);
-//void mx_print_acl(t_dir *m_ls, int i);
 void mx_print_acl(char *file);
 void mx_print_specific_time(time_t t);
 void mx_print_total_blocks(t_dir *m_ls);

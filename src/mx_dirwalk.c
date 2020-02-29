@@ -32,16 +32,21 @@ static void get_attribute(t_dir *m_ls, int i, char *file_name) {
 }
 
 static void get_max(t_dir *m_ls, int i) {
+    char *link = mx_itoa(m_ls->pointer[i].stat.st_nlink);
+    char *b_size = mx_itoa(m_ls->pointer[i].stat.st_size);
+
     if (mx_strlen(m_ls->pointer[i].file_name) > m_ls->max_f_size)
         m_ls->max_f_size = mx_strlen(m_ls->pointer[i].file_name);
     if (mx_strlen(m_ls->pointer[i].user_name) > m_ls->max_uid_size)
         m_ls->max_uid_size = mx_strlen(m_ls->pointer[i].user_name);
     if (mx_strlen(m_ls->pointer[i].group_name) > m_ls->max_gid_size)
         m_ls->max_gid_size = mx_strlen(m_ls->pointer[i].group_name);
-    if (mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_nlink)) > m_ls->max_link_size)
-        m_ls->max_link_size = mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_nlink));
-    if (mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_size)) > m_ls->max_byte_size)
-        m_ls->max_byte_size = mx_strlen(mx_itoa(m_ls->pointer[i].stat.st_size));
+    if (mx_strlen(link) > m_ls->max_link_size)
+        m_ls->max_link_size = mx_strlen(link);
+    if (mx_strlen(b_size) > m_ls->max_byte_size)
+        m_ls->max_byte_size = mx_strlen(b_size);
+    free(b_size);
+    free(link);
 }
 
 void mx_dirwalk(t_main *ls, char *file_name) {
