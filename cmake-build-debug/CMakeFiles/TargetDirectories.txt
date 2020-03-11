@@ -1,3 +1,0 @@
-/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/blevishche/study/Uls/Uls/cmake-build-debug/CMakeFiles/Uls.dir

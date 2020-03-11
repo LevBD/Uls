@@ -64,7 +64,7 @@ void mx_dirwalk(t_main *ls, char *file_name) {
     }
     closedir(dfd);
     mx_sort_struct(m_ls);
-    mx_printstr("\n");
+    // mx_printstr("\n");
     if (ls->l == 1)
         mx_print_long(m_ls, ls);
     else
