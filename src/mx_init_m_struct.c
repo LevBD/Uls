@@ -10,6 +10,7 @@ void mx_init_m_struct(char *dir, t_dir *m_ls) {
     if (dir == NULL)
         exit(-1);
     while ((dp = readdir(dfd)) != NULL) {
+        
         size++;
     }
     closedir(dfd);

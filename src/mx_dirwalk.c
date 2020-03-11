@@ -20,11 +20,11 @@ static void make_path(t_dir *m_ls, int i) {
 }
 
 static void get_attribute(t_dir *m_ls, int i, char *file_name) {
-    struct stat statbuf;
+    struct stat buf;
     m_ls->pointer[i].file_name = mx_strdup(file_name);
     make_path(m_ls, i);
-    lstat(m_ls->pointer[i].linkname, &statbuf);
-    m_ls->pointer[i].stat = statbuf;
+    lstat(m_ls->pointer[i].linkname, &buf);
+    m_ls->pointer[i].stat = buf;
     mx_get_permissions(m_ls, i);
     mx_get_ugid(m_ls, i);
     if (SISDIR(m_ls->pointer[i].stat.st_mode) && (m_ls->pointer[i].file_name[0] != '.'))
@@ -50,6 +50,7 @@ static void get_max(t_dir *m_ls, int i) {
 }
 
 void mx_dirwalk(t_main *ls, char *file_name) {
+    (void)ls;
     t_dir *m_ls = (t_dir *) malloc(sizeof(t_dir));
     struct dirent *dp;
     DIR *dfd;
