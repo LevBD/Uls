@@ -1,25 +1,23 @@
 #include "libmx.h"
 
-char *mx_nbr_to_hex(unsigned long nbr) {
-    int i = 0;
-    unsigned long r = nbr;
-    char *hex;
+char *mx_nbr_to_hex(unsigned long nbr) { // 495
+    int count_let_hex = 0;
+    unsigned long t = nbr;
+    char *s = mx_strnew(count_let_hex);
 
-    if (r > 0)
-        for (; r > 0; r /= 16, ++i);
-    else {
-        hex = mx_strnew(1);
-        hex[0] = '0';
-        return hex;
+    if (nbr == 0) {
+        s = "0";
+        return s;
     }
-    hex = mx_strnew(i);
-    for (; nbr > 0; i--) {
-        if (nbr % 16 < 10)
-            hex[i - 1] = nbr % 16 + 48;
-        else
-            hex[i - 1] = nbr % 16 + 87;
-            nbr /= 16;
+    while (t > 0) {
+        t = t / 16;
+        count_let_hex++; // found number k
     }
-    return hex;
+    for (int i = 0; i < count_let_hex; i++) {
+        t = nbr % 16;
+        s[i] = t < 10 ? t + '0' : t + 'a' - 10;
+        nbr = nbr / 16;
+    }
+    mx_str_reverse(s);
+    return s;
 }
-

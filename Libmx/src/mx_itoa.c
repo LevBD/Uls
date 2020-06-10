@@ -1,22 +1,37 @@
 #include "libmx.h"
 
-char *mx_itoa(int number) {
-    int size = 0;
-    long r = number;
-    char *str;
+static int count_reverse_tmp(char *tmp, int number);
 
-    if (number < 0) {
-        size++;
-        r *= -1;
+char *mx_itoa(int number) {
+    char *res = mx_strnew(11);
+    int i = 1;
+    char *tmp = mx_strnew(10); // for revers array;
+    int j = count_reverse_tmp(tmp, number);;
+
+    if (number == 0)  // for number = 0
+        res[0] = '0';
+    else if (number < 0) // for number < 0
+        res[0] = '-';
+    else i = 0;
+    while (j - 1 >= 0) { // write in correct order
+        j--;
+        res[i] = tmp[j];
+        i++;
     }
-    if (number == 0)
-        return mx_strdup("0");
-    for (long w = r; w > 0; w /= 10, size++);
-    str = mx_strnew(size);
-    if (number < 0)
-        str[0] = '-';
-    for (; r > 0; r /= 10, size--)
-        str[size - 1] = r % 10 + '0';
-    return str;
+    free(tmp);
+    res[i] = '\0';
+    return res;
 }
 
+static int count_reverse_tmp(char *tmp, int number) {
+    int j = 0;
+    while (number != 0) {
+        if (number > 0)
+            tmp[j] = number % 10 + 48;
+        if (number < 0)
+            tmp[j] = number % 10 * (-1) + 48;
+        number /= 10;
+        j++;
+    }
+    return j;
+}
